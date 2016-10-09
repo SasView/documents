@@ -190,7 +190,7 @@ Task Summary (Subject to the availability of sufficient resources):
 
 **Early 2019 (after code camp X) - Release 5.3**
 
-Subject to the availability of sufficient resources, release 5.3 will again try place an emphasis on addressing requests for smaller feature enhancements and improvements to the interface and workflow.  It will also include some new workflow interfaces.  Use cases and design development will commence on a web interface (possibly including smartphone app capabilities). Finish advanced fitting tutorial and other unfinished documentation projects. Review all documentation and prioritize needs for next release.
+Subject to the availability of sufficient resources, release 5.3 will again try place an emphasis on addressing requests for smaller feature enhancements and improvements to the interface and workflow.  It will also include some new workflow interfaces.  Use cases and design development will commence on a web interface (possibly including smartphone app capabilities). Advanced fitting tutorial and other unfinished documentation projects will be completed. Review all documentation and prioritize needs for next release.
 
 Task Summary (Subject to the availability of sufficient resources):
 
