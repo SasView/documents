@@ -44,11 +44,11 @@ In preparation for code camp III the repository was moved from SVN hosted on sou
 
 Wrapping up the code camp III work lead to release 3.1 which includes several bug fixes including a thread problem that could cause crashing. The documentation was completely updated, and the optimization engine was replaced with the BUMPS package which provides several new options besides the default levenberg-Marquardt, including a monte carlo method, DREAM, which provides a more robust error estimation and a number of graphical outputs of parameter correlation and convergence.
 
-**Early 2016 (post code camp IV - Delft) - Release 4.0**
+**March-September 2016 (post code camp IV - Delft) - Release 4.0**
 
-The major task for this release will be the separation of the model calculation code from the GUI. This work is currently underway with the model package in a separate repository (*sasmodels*) and models being gradually migrated to the new framework. This project will significantly clean up the code base and start disentangling the computational code from the GUI code which has crept in over the years. Importantly, it will also hugely simplify the process of implementing new models, provide the ability for users to drop in either a C or python SasView discoverable model and provide access to the built-in polydispersity functions. **This has been identified as the biggest stumbling block for further uptake by the community: it is both a frustration to current users and is preventing many power users from embracing SasView more fully****.**  
+The major task for this release was the separation of the model calculation code from the GUI. This was done by creating a model package (*sasmodels*) in a separate repository and migating all the old models into the new framework. This project helped to significantly clean up the code base and start disentangling the computational code from the GUI code which has crept in over the years. Most importantly, it also hugely simplifies the process of implementing new models, provides the ability for users to drop in either a C or python SasView discoverable model and provides access to the built-in polydispersity functions. **This had been identified as the biggest stumbling block for further uptake by the community: it was both a frustration to current users and preventing many power users from embracing SasView more fully****.**  
 
-Additionally, it will enable transparent access to multiprocessing and GPU support for many users.  On most macs this could provide native speedups of 10 to 100 for complex fitting, while windows machines should see a modest speedups but will require the installation of OpenCl by most users to take full advantage of the GPU speedup.  This process will be simplified as much as possible for the user. The sasmodels package will incorporate calculation of SESANS curves from SANS models as well as native SESANS models. This will enable the use of sasmodels with BUMPS in scripts to fit SESANS data and prepare for the integration of SESANS fitting into the SasView GUI. Finally, subject to the availability of sufficient resources, all the model documentation will be reviewed and the tutorial documentation will begin to be redone.
+In the process, the model code was completely refactored to both simplify and standize the writing of models, and to automaticaly enable transparent access to multiprocessing and GPU support for many users by using OpenCL.  Depending on the model this could provide speedups of 10 to 100 for complex fitting finally making 2D fitting start to be practical.  Macs come natively with openCL installed as do many pcs. Most PCs can be however be so enabled if they don't come that way out of the box and there are some speed gains even without GPU. SESANS infrastructure did not make it into release 4.0 but is ongoing at this point, however sasmodels can be run via scripts to fit SESANS data using BUMPS. Finally, the a plan for improving the user documentation was developed. The model documentation was moved into the model file itself thus keeping the model calculation and its documentation together, and all the model documentation was reviewed at some level and a standardized format developed though not completely implemented by release 4.0. Some cleanup to the menu bar and organization of the online documentation was begun with a plan to release it also as a PDF which would serve as a manual and a discussiong types of tutorials should be considered. Finally, with the aid of a summer student funding from ISIS, a web based "markeplace" of models was deployed which allows for uploading and sharing models.
 
 Task Summary (Subject to the availability of sufficient resources):
 
@@ -56,137 +56,141 @@ Task Summary (Subject to the availability of sufficient resources):
 
 * Review all model documentation for accuracy
 
-* Begin refactoring tutorial documentation to "getting started" tutorial
+* Restructure non-model documentation and develop more holistic documentation plan
 
-* Redesign model framework to use the new sasmodels package
+* Refactor model framework to use the new sasmodels package (keeping as much backward compatibility as possible for now)
 
-* Enable OpenCl GPU utilization for models and work on simplifying access for all users
+* Enable OpenCl GPU utilization for models.
 
-* Begin work on integrating SESANS into the SasView GUI
+* Develop SESANS modules and scripts that demonstrate the use of sasmodels to fit SESANS data and prepare for integration into the SasView GUI
 
-* Usual bug fixes and other minor improvements as time and interest permit
+* Begin work on GUI refactoring
 
-**Mid 2016 -  Organizational work**
-
-Subject to the availability of sufficient resources, a paper describing SasView will be submitted to J. Appl. Cryst. The first webinar on adding a user model (aimed at power users and instrument scientists) will be organized, while a couple of tutorials on fitting data with SasView will also be planned.  Finally a first effort at identifying and documenting papers that have used SasView for their analysis will be undertaken.
-
-**Late  2016 (after code camp V - SNS) - Release 4.w**
-
-Release 4.w will focus on addressing a growing list of requests for smaller feature enhancements and improvements to the interface and workflow rather than any major structural changes.  Subject to the availability of sufficient resources, two major efforts will be to begin tackling work on refactoring the Save Project code and the Report Results code.  In particular, the saving functionality will be refactored to "do what it says" including providing a true saving of the state of the entire SasView project being worked on. Again, subject to the availability of sufficient resources, other tasks will likely be smaller and prioritized prior to the code camp from the list of tickets.  These would include things like fixing linearized fits, ensuring that all range settings (including zooming) can be set easily both manually (typing in numbers) and graphically, allowing models to plot beyond the fit range, allowing the general scattering calculator output to combine with a data set for comparison. We will try to also start placing a focus on improving the Mac look and feel.  Currently development is focused on ensuring everything works on windows platforms which constitutes 60-70% of the user base.  The Mac versions covering 25-30% of the user base, have not been nearly as polished. Finally we will continue to work on the “getting started” tutorial that replaces the current tutorial and on ensuring better coverage of doc strings for developer documentation. 
-
-Task Summary (Subject to the availability of sufficient resources):
-
-* TBA from list of tickets at the time
-
-* Begin Refactor of Report Results
-
-* Begin Refactor of Save Project
-
-* Work on Mac usability issues
-
-* Work on new "getting started" tutorial
-
-* Work on coverage and correctly formatted docstrings (developer documentation)
-
-**Early  2017 (after code camp VI - TBA) - Release 4.x**
-
-Subject to the availability of sufficient resources, release 4.x will focus more on infrastructure needs: Full separation of UI from computational code; Full unit testing, adding adaptive integration; Integrating SESANS into SasView GUI; and Refactoring configuration/preferences settings.  Additionally, remaining work on Reporting Results and Save Project will be completed.  Addition of a dispatcher will begin during code camp VI but is not expected to be completed in time for this release. As part of this effort a refactoring of the Plotting module will be considered. Adaptive integration should reduce help requests due to numerical integration problems. Also will begin studying the further need for refactoring to allow users to chose the integration method. Work will continue on improving the Mac usability. Finally, help documentation will be updated and the "getting started" tutorial will be completed.
-
-Task Summary (Subject to the availability of sufficient resources):
-
-* Finish UI and computation code separation
-
-* Finish ensuring all computational code has proper unit tests and that they are all being run
-
-* Finish "getting started" tutorial
-
-* Revisit help documentation and update as needed.
-
-* Integrate SESANS into GUI.
-
-* Add adaptive integration to help users optimize fitting and explore need for refactoring to allow user choice of integration methods
-
-* Refactor startup configuration/preferences setting to give access to configuration file more cleanly 
-
-* Begin work on dispatcher
-
-* Consider the need to refactor plotting modules and begin work as appropriate
-
-* Finish work on refactor of Saving Project and Reporting Results
-
-* Continue focus on mac platform
+* Build and deploy a marketplace of models
 
 * Usual bug fixes and other minor improvements as time and interest permit
 
-**Late 2017 (after code camp VII - TBA) - Release 4.y**
+**October-December 2016 (post code camp V - SNS) - Release 4.1**
 
-Subject to the availability of sufficient resources, release 4.y will provide a dispatcher module in the UI which will be used to enhance the user experience by better integrating the fit panels with their respective plots and with the batch mode.  Otherwise this release will focus again on addressing the number of smaller feature requests and GUI and workflow enhancements. Documentation review and creation of new documentation will continue.  In particular we will try to develop a "how to add a C model and submit using pull request" tutorial as well as a code architecture manual.
+The main aim for release 4.1 is to address the growing list of requests for smaller feature enhancements and improvements to the interface and workflow rather than any major structural changes.  However, due to the availability of SINE2020 resources, code camp work will minimize major GUI enhancements in favor of making progress on the new GUI interface.  Cleanup of projects left over from the 4.0 release such as finishing the model documentation standardization and review are also a focus of this code camp. While a complete overhaul of saving state is being built into the new GUI project, the ability to save constrained fit pages will be addressed in this release. Currently development is heavily focused on ensuring everything works on windows platforms which constitutes 60-70% of the user base.  The Mac versions covering 25-30% of the user base, have not been nearly as polished something that will hopefully start to improve with this release. The GUI will provide the ability to fit SESANS data. Finally, with funding for a summer student at ISIS the old corfunc functionality from CCP13 will be integrated as a new perspective.
 
 Task Summary (Subject to the availability of sufficient resources):
 
-* TBA from list of tickets at the time
+* TBA from list of tickets
 
-* Dispatcher module added to allow tighter integration between related panels
+* Add a new corfunc perspective
 
-* Finish refactoring of Plot modules
+* Added file converter to support multifile data
 
-* Develop a "how to add a C model and submit using a pull request" tutorial
+* Integrate SESANS into the SasView GUI
 
-* Work on developing a new SasView architecture manual
+* Fix Save Project when constrained fits are used
 
-* Enhancing of plot functionality
+* Continue work on GUI refactoring (and the clean separation of UI from computational code.
 
-    * tighten space, better fonts, provide both graphical and text entry of controls, put residuals on same panel, provide option to turn auto- plotting of residuals on or off etc)
+* Work on increasing model coverage looking at non-overlap with SASfit models.
+
+* Begin work refactoring/clean-up of Batch fitting (to include batch operations on roi such as box sum and slices). 
+
+* Finish model documentation review and formating
+
+* Add missing documentation and documentation of new functionality
+
+* Work on improving infrastructure (build systems, 64 bit/Anaconda on all platforms of build machines, trac, licensing, etc)
+
+**Early  2017 (post code camp VI - Grenoble) - Release 4.2**
+
+Subject to the availability of sufficient resources, release 4.2 will again focus on feature enhancements and bug fixes while continuing to work on the GUI refactoring in preparation for a release 5 at the end of the year. As part of that effort plotting requriments and design work should begin. Model work will finish pulling the SASfit models and add computation of the amplitude in preparation for implementing the beta approximation; improve code optimization in particularl adding suport for multiple GPUs; begin to transition to using adaptive integration in order to improve speed and accuracy of model fitting; and streamline the API to make scripting and pipelining more straightforward.  Also will consider the need to allow users to chose the integration method as well as start working on building the beta approximation into sasmodels. On the documentation front, besides the continual updating, work should begin on a tutorial series. Finally, an effort to reach to full unit test coverage should begin as will as verifying code usage and weeding out redundant code.
+
+Task Summary (Subject to the availability of sufficient resources):
+
+* TBA from list of tickets
+
+* Continue work on new GUI and code separation
+
+* Enhancing of plot functionality - Collect requirements and begin design.
+
+    * Identify requirments and improvements desired from current design such as tighten space, better fonts, provide both graphical and text entry of controls, put residuals on same panel, provide option to turn auto- plotting of residuals on or off etc)
 
     * decide on technology to use matplotlib, qtplot, pyqtgraph - currently use matplotlib which is most used but slow at times.  ESRF uses it also but has added a layer to make it faster?
 
-* Usual bug fixes and other minor improvements as time and interest permit
+* Begin work to ensure all computational code has proper unit tests and that they are all being run
 
-**Early 2018 (after code camp VIII - TBA) - Release 4.z**
+* Work on verifying code redundancy and weed out old/unused/obsolete code
 
-Subject to the availability of sufficient resources, release 4.z  will see the completion and deployment of the report refactoring while the remaining models which do not support magnetic contrast will have that added. Work will start on refactoring fitting to allow, for example custom re-parameterization of models (e.g. replace SLD with fraction of solvent in layer), using an input array for P or S in a P*S model, outputting P and S separately in such a fit, fitting oriented model to 1D cut etc. Work will begin on refactoring the simultaneous/constrained fitting workflow interface and refactoring/cleaning-up the batch fitting workflow to include batch processing of for example ROI (box sum or slices) etc. Work will also begin on possible specialized workflows for magnetic scattering. User documentation/tutorials will be reviewed, an advanced "how to fit my data" tutorial will be started, and the architecture manual completed.
+* Begin work on tutorial series
+
+* Update documentation
+
+* Finish SASfit model integration
+
+* Add adaptive integration to help users optimize fitting and explore need for refactoring to allow user choice of integration methods and begin work on sasmodels infrastructure to provid beta approximation and coherent summing of models
+
+* Restructure sasmodels API to streamline scriptability
+
+* Work on sasmodels code optimization for GPU and add support for multi GPU.
+
+**Mid 2017 -  Organizational work**
+
+Subject to the availability of sufficient resources, a paper describing SasView will be submitted to J. Appl. Cryst. The first webinar on adding a user model (aimed at power users and instrument scientists) will be organized, while a couple of tutorials on fitting data with SasView will also be planned.  Finally a first effort at identifying and documenting papers that have used SasView for their analysis will be undertaken.
+
+**Late 2017 (after code camp VII - TBA) - Release 5.0**
+
+Subject to the availability of sufficient resources, release 5.0 will move to the new QT based GUI interface.  This will provide a clean API so that future GUI efforts such as web interfaces etc will be simpler to introduce while significanty improving the user experience by providing better intergration between the various parts of the GUI that have evolved and grown organically over time in response to requests. This will hopefully also address the mac vs PC usability, save state, reporting, and preferences setting which have been raised as high priority useability issues. Documentation review and creation of new documentation will continue.  `In particular we will try to develop a "how to add a model and submit using pull request" tutorial as well as a code architecture manual.
 
 Task Summary (Subject to the availability of sufficient resources):
 
-* Add support for magnetic contrast to remaining models
+* TBA from list of tickets at the time
+
+* Finish refactoring new Qt based GUI and deploy including new plotting interface
+
+* Release sasmodels 1.0 and load to PyPI
+
+* Develop a "how to add a model and submit using a pull request" tutorial
+
+* Begin developing use cases and design for custom workflows such as magnetic scattering, polarized beam scattering, contrast series scattering, etc.
+
+* Work on developing a new SasView architecture manual
+
+* Usual bug fixes and other minor improvements as time and interest permit
+
+**Early 2018 (after code camp VIII - TBA) - Release 5.1**
+
+Subject to the availability of sufficient resources, release 5.1. Work will start on refactoring fitting to allow, for example custom re-parameterization of models (e.g. replace SLD with fraction of solvent in layer), using an input array for P or S in a P*S model, fitting oriented model to 1D cut etc. Work will begin on refactoring the simultaneous/constrained fitting workflow interface and on custom workflows identified as highest priority and having a well developed design. User documentation/tutorials will be reviewed, an advanced "how to fit my data" tutorial will be started, and the architecture manual completed.
+
+Task Summary (Subject to the availability of sufficient resources):
+
+* Begin model fitting refactoring work to allow custom re-parameterization of models, allow reading in an array representing either PQ or SQ for P*S fits, fitting oriented model to 1D cuts including revisiting orientation definitions etc.
 
 * Complete architecture manual
 
 * Begin work on refactoring constrained/simultaneous fits.
 
-* Begin work refactoring/clean-up of Batch fitting (to include batch operations on roi such as box sum and slices). 
-
-* Begin model fitting refactoring work to allow custom re-parameterization of models, allow reading in an array representing either PQ or SQ for P*S fits, allow print out of P and S separately during a P*S fit, fitting oriented model to 1D cuts including revisiting orientation definitions etc.
-
-* Begin work on adding possible custom workflows for magnetic scattering  -- NIST and ESS, possible ISIS and ILL needs?  talk to Albrecht Wiedenmann
+* Begin work on adding custom workflows identified as highest priority and 
 
 * Begin work on advanced model fitting tutorial
 
 * Usual bug fixes and other minor improvements as time and interest permit
 
-**Late 2018 (after code camp IX - TBA) - Release 5.0**
+**Late 2018 (after code camp IX - TBA) - Release 5.2**
 
-Subject to the availability of sufficient resources, release 5.0 will provide new fitting functionality such as custom re-parameterization of models, allow reading in an array representing either PQ or SQ for P*S fits, allow print out of P and S separately during a P*S fit, fitting oriented model to 1D cut etc. The refactored workflow interfaces for constrained/simultaneous fits and batch fitting and plotting module will be deployed in this release.  Work will continue on an advanced data fitting with SasView tutorial.  Work on new workflow/interfaces for contrast variation for example and new magnetic scattering workflows will begin.  These workflows are not expected to be in the release however.
+Subject to the availability of sufficient resources, release 5.2 will provide new fitting functionality such as custom re-parameterization of models, allow reading in an array representing either PQ or SQ for P*S fits, allow print out of P and S separately during a P*S fit, fitting oriented model to 1D cut etc. The refactored workflow interfaces for constrained/simultaneous fits and batch fitting and plotting module will be deployed in this release.  Work will continue on an advanced data fitting with SasView tutorial.  Work on new workflow/interfaces for contrast variation for example and new magnetic scattering workflows will begin.  These workflows are not expected to be in the release however. 
 
 Task Summary (Subject to the availability of sufficient resources):
 
-* Finish fitting refactoring work to allow custom re-parameterization of models, allow reading in an array representing either PQ or SQ for P*S fits, allow print out of P and S separately during a P*S fit, fitting oriented model to 1D cut etc.
+* Finish fitting refactoring work to allow custom re-parameterization of models, allow reading in an array representing either PQ or SQ for P*S fits, fitting oriented model to 1D cut etc.
 
 * Refactor simultaneous/constrained workflow interface
 
-* Refactor/clean-up batch workflow/interface (should also works with other tools such as roi slices/box sums etc)
-
 * Continue development of advanced fitting tutorial
 
-* Start new workflow/interfaces (e.g. contrast variation etc)
-
-* Start adding new workflows for magnetic scattering as appropriate
+* Start new workflow/interfaces
 
 * Usual bug fixes and other minor improvements as time and interest permit
 
-**Early 2019 (after code camp X) - Release 5.x**
+**Early 2019 (after code camp X) - Release 5.3**
 
-Subject to the availability of sufficient resources, release 5.x will again try place an emphasis on addressing requests for smaller feature enhancements and improvements to the interface and workflow.  It will also include some new workflow interfaces.  Finally , refactoring of the user interface  will begin with an examination of new technologies and a new toolbox may be chosen.  Current contenders seem to include: wx, qt, django, D3 and genap.  New interface should probably support web application as well as local operations.  Further a smartphone web app tool to interface with web will be considered. Finish advanced fitting tutorial and other unfinished documentation projects. Review all documentation and prioritize needs for next release.
+Subject to the availability of sufficient resources, release 5.3 will again try place an emphasis on addressing requests for smaller feature enhancements and improvements to the interface and workflow.  It will also include some new workflow interfaces.  Use cases and design development will commence on a web interface (possibly including smartphone app capabilities). Finish advanced fitting tutorial and other unfinished documentation projects. Review all documentation and prioritize needs for next release.
 
 Task Summary (Subject to the availability of sufficient resources):
 
@@ -194,13 +198,9 @@ Task Summary (Subject to the availability of sufficient resources):
 
 * Finish advanced model fitting tutorial
 
-* Include new workflow/interfaces (e.g. magnetic scattering, contrast variation, etc)
+* Include more workflow/interfaces
 
-* Begin UI refactor work - agree on technology and designs
-
-    * Work on Web interface - initial version can have minimal features but would be useful for demos?
-
-    * Begin work on smartphone app web interface
+* Begin use case and design on Web interface (with possible smartphone app feature) - initial version can have minimal features but would be useful for demos?
 
 * Finish outstanding documentation projects
 
@@ -210,13 +210,13 @@ Task Summary (Subject to the availability of sufficient resources):
 
 **Late 2019 (after code camp XI - TBA) - Release 5.y**
 
-Subject to the availability of sufficient resources, release 5.y will start providing intelligent feedback on unreasonable choices.  Support for ASAXS will be added and other SAXS specific tools/workflows will be added as needed.  UI refactoring work will continue but is not expected to be ready for this release.  Finally work will begin to allow computational code to run on a cluster and an intelligent launcher/scheduler design started for the GUI frontend which will make the use of the a cluster backend transparent to the user. Include documentation tasks prioritized in previous round.
+Subject to the availability of sufficient resources, release 5.y will start providing intelligent feedback on unreasonable choices.  Support for ASAXS will be added and other SAXS specific tools/workflows will be added as needed.  web UI work will continue but is not expected to be ready for this release.  Finally work will begin to allow computational code to run on a cluster and an intelligent launcher/scheduler design started for the GUI frontend which will make the use of the a cluster backend transparent to the user. Include documentation tasks prioritized in previous round.
 
 Task Summary (Subject to the availability of sufficient resources):
 
 * Start including intelligent limits/help (possibly include switch between enforcement and warning only) and explore the use of wizards in some cases
 
-* Continue work on UI Refactoring including web and smartphone app
+* Continue work on web UI and smartphone app
 
 * ASAXS support added 
 
