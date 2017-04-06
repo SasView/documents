@@ -5100,6 +5100,7 @@
    <text:p text:style-name="P20">Start of this tutorial</text:p>
    <text:p text:style-name="P12"/>
    <text:p text:style-name="P12">Here is some text that SMK added in a text editor in Eclipse!</text:p>
+   <text:p text:style-name="P12">And some more</text:p>
    </office:text>
  </office:body>
 </office:document>
