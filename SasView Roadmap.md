@@ -96,11 +96,9 @@ Task Summary (Subject to the availability of sufficient resources):
 
 * Work on improving infrastructure (build systems, 64 bit/Anaconda on all platforms of build machines, trac, licensing, etc)
 
-==============
-
 **Early  2017 (post code camp VI - Grenoble) Release 4.1.2**
 
-Release 4.1.2 focused on feature enhancements and bug fixes while continuing to work on the GUI refactoring in preparation for a release 5. As part of that effort plotting requriments and design were adressed. Also considered the need to allow users to chose the integration method as well as start working on building the beta approximation into sasmodels. On the documentation front, besides the continual updating, work on a tutorial series began. An effort to reach to full unit test coverage began as well as verifying code usage and weeding out redundant code. Finally, sascalc and sasmodels modules were converted to become python3 compatible
+Release 4.1.2 focused on feature enhancements and bug fixes while continuing to work on the GUI refactoring in preparation for a release 5. As part of that effort plotting requriements and design were addressed. Also considered the need to allow users to chose the integration method as well as start working on building the beta approximation into sasmodels. On the documentation front, besides the continual updating, work on a tutorial series began. An effort to reach to full unit test coverage began as well as verifying code usage and weeding out redundant code. Finally, sascalc and sasmodels modules were converted to become python3 compatible
 
 Task Summary (Subject to the availability of sufficient resources):
 
@@ -108,7 +106,7 @@ Task Summary (Subject to the availability of sufficient resources):
 
 * Enhancing of plot functionality - Collect requirements and begin design.
 
-    * Identify requirments and improvements desired from current design such as tighten space, better fonts, provide both graphical and text entry of controls, put residuals on same panel, provide option to turn auto- plotting of residuals on or off etc)
+    * Identify requirements and improvements desired from current design such as tighten space, better fonts, provide both graphical and text entry of controls, put residuals on same panel, provide option to turn auto- plotting of residuals on or off etc)
 
     * decide on technology to use matplotlib, qtplot, pyqtgraph - currently use matplotlib which is most used but slow at times.  ESRF uses it also but has added a layer to make it faster?
 
@@ -124,7 +122,7 @@ Task Summary (Subject to the availability of sufficient resources):
 
 
 **Late 2017 (post code camp VII - Copenhagen) - Release 4.2**
-Release 4.2 focuses primarily on redifining and reimplementing orientation angles for 2D fitting, which were previously recognized as difficult to to understand by users. Entry barrier for new users and develpers has been considerably lowered by simplyfing setup, adding guides and providing exmamples. New features have been added to facilitate model editing and writting. Boltzmann and uniform distribution have been added to describe behavior of magnetic particles more accurretly. Selected SASFit models have been added to sasview marketplace. At the same time work on new GUI continued. This involved mostly adding new functionalities and converting existing code base to support python3.  
+Release 4.2 focuses primarily on redefining and reimplementing orientation angles for 2D fitting, which were previously recognized as difficult to to understand by users. Entry barrier for new users and develpers has been considerably lowered by simplyfying setup, adding guides and providing examples. New features have been added to facilitate model editing and writing. Boltzmann and uniform distribution have been added to describe behavior of magnetic particles more accurately. Selected SASFit models have been added to sasview marketplace. At the same time work on new GUI continued. This involved mostly adding new functionalities and converting existing code base to support python3.  
 
 Task Summary (Subject to the availability of sufficient resources):
 
@@ -165,7 +163,6 @@ Task Summary (Subject to the availability of sufficient resources):
 
 Subject to the availability of sufficient resources, a paper describing SasView will be submitted to J. Appl. Cryst. The first webinar on adding a user model (aimed at power users and instrument scientists) will be organized, while a couple of tutorials on fitting data with SasView will also be planned.  Finally a first effort at identifying and documenting papers that have used SasView for their analysis will be undertaken.
 
-===============
 
 **Mid 2018 (after code camp VII - TBA) - Release 5.0**
 
@@ -309,4 +306,4 @@ Subject to the availability of sufficient resources, release 6.x will again try 
 ## Revision History ##
 
 * 2015-11-24	: First release
-* 2016-10-11	: Updated after Code Camp V discussions
+* 2018-02-05	: Updated after Code Camp VII
