@@ -72,11 +72,9 @@ Task Summary (Subject to the availability of sufficient resources):
 
 **October-December 2016 (post code camp V - SNS) - Release 4.1**
 
-The main aim for release 4.1 is to address the growing list of requests for smaller feature enhancements and improvements to the interface and workflow rather than any major structural changes.  However, due to the availability of SINE2020 resources, code camp work will minimize major GUI enhancements in favor of making progress on the new GUI interface.  Cleanup of projects left over from the 4.0 release such as finishing the model documentation standardization and review are also a focus of this code camp. While a complete overhaul of saving state is being built into the new GUI project, the ability to save constrained fit pages will be addressed in this release. Currently development is heavily focused on ensuring everything works on windows platforms which constitutes 60-70% of the user base.  The Mac versions covering 25-30% of the user base, have not been nearly as polished something that will hopefully start to improve with this release. The GUI will provide the ability to fit SESANS data. Finally, with funding for a summer student at ISIS the old corfunc functionality from CCP13 will be integrated as a new perspective.
+The main aim for release 4.1 was to address the growing list of requests for smaller feature enhancements and improvements to the interface and workflow rather than any major structural changes.  However, due to the availability of SINE2020 resources, code camp work minimized major GUI enhancements in favor of making progress on the new GUI interface.  Cleanup of projects left over from the 4.0 release such as finishing the model documentation standardization and review was also a focus of this code camp. While a complete overhaul of saving state is being built into the new GUI project, the ability to save constrained fit pages was addressed in this release. Currently development is heavily focused on ensuring everything works on windows platforms which constitutes 60-70% of the user base.  The Mac versions covering 25-30% of the user base, have not been nearly as polished something that also started to improve with this release. The GUI provides the ability to fit SESANS data. Finally, with funding for a summer student at ISIS the old corfunc functionality from CCP13 was integrated as a new perspective.
 
 Task Summary (Subject to the availability of sufficient resources):
-
-* TBA from list of tickets
 
 * Add a new corfunc perspective
 
@@ -98,13 +96,13 @@ Task Summary (Subject to the availability of sufficient resources):
 
 * Work on improving infrastructure (build systems, 64 bit/Anaconda on all platforms of build machines, trac, licensing, etc)
 
-**Early  2017 (post code camp VI - Grenoble) - Release 4.2**
+==============
 
-Subject to the availability of sufficient resources, release 4.2 will again focus on feature enhancements and bug fixes while continuing to work on the GUI refactoring in preparation for a release 5 at the end of the year. As part of that effort plotting requriments and design work should begin. Model work will finish pulling the SASfit models and add computation of the amplitude in preparation for implementing the beta approximation; improve code optimization in particularl adding suport for multiple GPUs; begin to transition to using adaptive integration in order to improve speed and accuracy of model fitting; and streamline the API to make scripting and pipelining more straightforward.  Also will consider the need to allow users to chose the integration method as well as start working on building the beta approximation into sasmodels. On the documentation front, besides the continual updating, work should begin on a tutorial series. Finally, an effort to reach to full unit test coverage should begin as will as verifying code usage and weeding out redundant code.
+**Early  2017 (post code camp VI - Grenoble) Release 4.1.2**
+
+Release 4.1.2 focused on feature enhancements and bug fixes while continuing to work on the GUI refactoring in preparation for a release 5. As part of that effort plotting requriments and design were adressed. Also considered the need to allow users to chose the integration method as well as start working on building the beta approximation into sasmodels. On the documentation front, besides the continual updating, work on a tutorial series began. An effort to reach to full unit test coverage began as well as verifying code usage and weeding out redundant code. Finally, sascalc and sasmodels modules were converted to become python3 compatible
 
 Task Summary (Subject to the availability of sufficient resources):
-
-* TBA from list of tickets
 
 * Continue work on new GUI and code separation
 
@@ -122,21 +120,56 @@ Task Summary (Subject to the availability of sufficient resources):
 
 * Update documentation
 
+* python3 support for API
+
+
+**Late 2017 (post code camp VII - Copenhagen) - Release 4.2**
+Release 4.2 focuses primarily on redifining and reimplementing orientation angles for 2D fitting, which were previously recognized as difficult to to understand by users. Entry barrier for new users and develpers has been considerably lowered by simplyfing setup, adding guides and providing exmamples. New features have been added to facilitate model editing and writting. Boltzmann and uniform distribution have been added to describe behavior of magnetic particles more accurretly. Selected SASFit models have been added to sasview marketplace. At the same time work on new GUI continued. This involved mostly adding new functionalities and converting existing code base to support python3.  
+
+Task Summary (Subject to the availability of sufficient resources):
+
+* Orientation angles redefined and implemented
+
+* Quick start guide for adding models - documentation/introduction for new users 
+
+* Ship correct example models (that use new sasmodels API)
+
+* Improvement of model editor e.g. add some features from compare.py such as plotting
+
+* ‘Quick start guide’ for scripting with sascalc/sasmodels/bumps
+
+* Boltzmann and uniform distribution
+
+* Selected SASFit models added to sasview marketplace
+
+* python3 support for new GUI 
+
+**Early 2018 - Release 4.3**
+
+Release 4.3 will involve releasing sasmodels 1.0 through pypi; computation of the amplitude in preparation for implementing the beta approximation; finishing SASFit model integration; transition to using adaptive integration in order to improve speed and accuracy of model fitting; streamlining the API to make scripting and pipelining more straightforward. 
+
+Task Summary (Subject to the availability of sufficient resources):
+
+* Release sasmodels 1.0 and upload to PyPI
+
 * Finish SASfit model integration
 
-* Add adaptive integration to help users optimize fitting and explore need for refactoring to allow user choice of integration methods and begin work on sasmodels infrastructure to provid beta approximation and coherent summing of models
+* Add adaptive integration to help users optimize fitting and explore need for refactoring to allow user choice of integration methods and begin work on sasmodels infrastructure to provide beta approximation and coherent summing of models
 
 * Restructure sasmodels API to streamline scriptability
 
 * Work on sasmodels code optimization for GPU and add support for multi GPU.
 
-**Mid 2017 -  Organizational work**
+
+**Mid 2018 -  Organizational work**
 
 Subject to the availability of sufficient resources, a paper describing SasView will be submitted to J. Appl. Cryst. The first webinar on adding a user model (aimed at power users and instrument scientists) will be organized, while a couple of tutorials on fitting data with SasView will also be planned.  Finally a first effort at identifying and documenting papers that have used SasView for their analysis will be undertaken.
 
-**Late 2017 (after code camp VII - TBA) - Release 5.0**
+===============
 
-Subject to the availability of sufficient resources, release 5.0 will move to the new QT based GUI interface.  This will provide a clean API so that future GUI efforts such as web interfaces etc will be simpler to introduce while significanty improving the user experience by providing better intergration between the various parts of the GUI that have evolved and grown organically over time in response to requests. This will hopefully also address the mac vs PC usability, save state, reporting, and preferences setting which have been raised as high priority useability issues. Documentation review and creation of new documentation will continue.  `In particular we will try to develop a "how to add a model and submit using pull request" tutorial as well as a code architecture manual.
+**Mid 2018 (after code camp VII - TBA) - Release 5.0**
+
+Subject to the availability of sufficient resources, release 5.0 will move to the new QT based GUI interface.  This will provide a clean API so that future GUI efforts such as web interfaces etc will be simpler to introduce while significanty improving the user experience by providing better intergration between the various parts of the GUI that have evolved and grown organically over time in response to requests. This will hopefully also address the mac vs PC usability, save state, reporting, and preferences setting which have been raised as high priority useability issues. Documentation review and creation of new documentation will continue.  In particular we will try to develop a "how to add a model and submit using pull request" tutorial as well as a code architecture manual.
 
 Task Summary (Subject to the availability of sufficient resources):
 
@@ -154,7 +187,7 @@ Task Summary (Subject to the availability of sufficient resources):
 
 * Usual bug fixes and other minor improvements as time and interest permit
 
-**Early 2018 (after code camp VIII - TBA) - Release 5.1**
+**Late 2018 (after code camp VIII - TBA) - Release 5.1**
 
 Subject to the availability of sufficient resources, release 5.1. Work will start on refactoring fitting to allow, for example custom re-parameterization of models (e.g. replace SLD with fraction of solvent in layer), using an input array for P or S in a P*S model, fitting oriented model to 1D cut etc. Work will begin on refactoring the simultaneous/constrained fitting workflow interface and on custom workflows identified as highest priority and having a well developed design. User documentation/tutorials will be reviewed, an advanced "how to fit my data" tutorial will be started, and the architecture manual completed.
 
@@ -172,7 +205,7 @@ Task Summary (Subject to the availability of sufficient resources):
 
 * Usual bug fixes and other minor improvements as time and interest permit
 
-**Late 2018 (after code camp IX - TBA) - Release 5.2**
+**Early 2018 (after code camp IX - TBA) - Release 5.2**
 
 Subject to the availability of sufficient resources, release 5.2 will provide new fitting functionality such as custom re-parameterization of models, allow reading in an array representing either PQ or SQ for P*S fits, allow print out of P and S separately during a P*S fit, fitting oriented model to 1D cut etc. The refactored workflow interfaces for constrained/simultaneous fits and batch fitting and plotting module will be deployed in this release.  Work will continue on an advanced data fitting with SasView tutorial.  Work on new workflow/interfaces for contrast variation for example and new magnetic scattering workflows will begin.  These workflows are not expected to be in the release however. 
 
@@ -188,7 +221,7 @@ Task Summary (Subject to the availability of sufficient resources):
 
 * Usual bug fixes and other minor improvements as time and interest permit
 
-**Early 2019 (after code camp X) - Release 5.3**
+**Late 2019 (after code camp X) - Release 5.3**
 
 Subject to the availability of sufficient resources, release 5.3 will again try place an emphasis on addressing requests for smaller feature enhancements and improvements to the interface and workflow.  It will also include some new workflow interfaces.  Use cases and design development will commence on a web interface (possibly including smartphone app capabilities). Advanced fitting tutorial and other unfinished documentation projects will be completed. Review all documentation and prioritize needs for next release.
 
@@ -208,7 +241,7 @@ Task Summary (Subject to the availability of sufficient resources):
 
 * Usual bug fixes and other minor improvements as time and interest permit
 
-**Late 2019 (after code camp XI - TBA) - Release 5.y**
+**Early 2020 (after code camp XI - TBA) - Release 5.y**
 
 Subject to the availability of sufficient resources, release 5.y will start providing intelligent feedback on unreasonable choices.  Support for ASAXS will be added and other SAXS specific tools/workflows will be added as needed.  web UI work will continue but is not expected to be ready for this release.  Finally work will begin to allow computational code to run on a cluster and an intelligent launcher/scheduler design started for the GUI frontend which will make the use of the a cluster backend transparent to the user. Include documentation tasks prioritized in previous round.
 
@@ -228,7 +261,7 @@ Task Summary (Subject to the availability of sufficient resources):
 
 * Usual bug fixes and other minor improvements as time and interest permit
 
-**Early 2020 (after code camp XII) - Release 6.0**
+**Late 2020 (after code camp XII) - Release 6.0**
 
 Subject to the availability of sufficient resources, release 6.0 will allow running compute intensive portions of SasView computation on a cluster back end with a transparent access from the user GUI.  It will also allow deployment as a webservice with a web based front end which will have limited functionality in this first instance.  Work on a smartphone app interface to the webservice will continue but lilkely will not be ready for this release. The use of wizards and intelligent user guidance will be expanded and new workflows/interfaces may be added as appropriate. Include documentation tasks prioritized in previous round.
 
@@ -252,7 +285,7 @@ Task Summary (Subject to the availability of sufficient resources):
 
 * Usual bug fixes and other minor improvements as time and interest permit
 
-**Late 2020 (after code camp XIII - TBA) - Release 6.x**
+**Early 2021 (after code camp XIII - TBA) - Release 6.x**
 
 Subject to the availability of sufficient resources, release 6.x will again try place an emphasis on addressing requests for smaller feature enhancements and improvements to the interface and workflow.  It will also continue to expand on intelligent guidance and include more functionality on web app and see the deployment of a smartphone app. Include documentation tasks prioritized in previous round.
 
@@ -268,7 +301,7 @@ Subject to the availability of sufficient resources, release 6.x will again try 
 
 * Usual bug fixes and other minor improvements as time and interest permit
 
-**2021 - Release 6.y-z**
+**2022 - Release 6.y-z**
 
 * A 20% contingency is built into this 5 year roadmap to achieve the goals laid out.
 
