@@ -128,13 +128,16 @@ Task Summary:
 - Move focus of all GUI efforts to the new Qt GUI
 - Parallel development and release tracks
 - Complete beta approximation work
+- new more flexible interaction volumes/radii
 - Community meeting at SAS 2018
 - Complete SasView paper
 - Consolidate and extend training material - both written tutorials and hands-on training material.
+- release 5.0 alpha (late 2018), 5.0 beta (early 2019), 5.0 (mid 2019) 
+- release 4.2
 
-**Late 2019  - Release 5.1**
+**Late 2019 to mid 2020 (from code camp VIII - ESS) - Release 4.3, Release 5.1**
 
-Subject to the availability of sufficient resources, release 5.1. Work will start on refactoring fitting to allow, for example custom re-parameterization of models (e.g. replace SLD with fraction of solvent in layer), using an input array for P or S in a P*S model, fitting oriented model to 1D cut etc. Work will begin on refactoring the simultaneous/constrained fitting workflow interface and on custom workflows identified as highest priority and having a well developed design. User documentation/tutorials will be reviewed, an advanced "how to fit my data" tutorial will be started, and the architecture manual completed.
+Subject to the availability of sufficient resources, release 5.1. Work will start on refactoring fitting to allow, for example custom re-parameterization of models (e.g. replace SLD with fraction of solvent in layer), using an input array for P or S in a P*S model, fitting oriented model to 1D cut etc. Work will begin on refactoring the simultaneous/constrained fitting workflow interface and on custom workflows identified as highest priority and having a well developed design. User documentation/tutorials will be reviewed, an advanced "how to fit my data" tutorial will be started, and an architecture manual begun.
 
 Task Summary (Subject to the availability of sufficient resources):
 
