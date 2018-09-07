@@ -24,6 +24,12 @@ This is a regularly updated document, reviewed at each Code Camp. Document histo
 
 [^6]: <http://github.com/SasView/documents/Roadmap>
 
+[^7]: <https://github.com/SASfit/SASfit>
+
+[^8]: <http://www.esrf.eu/UsersAndScience/Experiments/CRG/BM26/SaxsWaxs/DataAnalysis/Scatter>
+
+[^9]: <https://github.com/usnistgov/pyPRISM>
+
 ## Development Model
 
 The SasView project is co-ordinated by a small management team who are also members of the broader development team. The development team currently consists of scientists and software engineers from scattering facilities around the world. Progress is monitored and project direction discussed at bi-weekly video conferences. The work is divided into various work packages that bundle together related tasks and issues. The project aims for a major release each year, with minor bug fix releases as required in between.
@@ -114,7 +120,7 @@ Task Summary:
 - Update model marketplace
 - Create plan for developing community interactions.
 - Fixes to custom model editor to support polydispersity
-- Incorporation of models from SASFit and Scatter (Förster - crystalline materials models primarily)
+- Incorporation of models from SASFit[^7] and Scatter[^8] (Förster - crystalline materials models primarily)
 - Project infrastructure cleanup - ticket review/cull given 5.0 release and possible move to GitHub issues.
 - Release 5.0 alpha (late 2018), 5.0 beta (early 2019), 5.0 (mid 2019) 
 - Release 4.2
@@ -122,7 +128,7 @@ Task Summary:
 **Late 2019 to mid 2020 (from code camp VIII - ESS) - Release 4.3, Release 5.1**
 
 Subject to the availability of sufficient resources, release 5.1. Work will start on refactoring fitting to allow, for example custom re-parameterization of models (e.g. replace SLD with fraction of solvent in layer), using an input array for P or S in a P*S model, fitting oriented model to 1D cut etc. Work will begin on refactoring the simultaneous/constrained fitting workflow interface and on custom workflows identified as highest priority and having a well developed design. User documentation/tutorials will be reviewed, an advanced "how to fit my data" tutorial will be started, and an architecture manual begun. McSAS will be integrated into SasView, giving users an  approach to obtaining particle size distributions.
-Work on providing the generic O-Z solver tool that is present in SASFit will begin. Work on support for multi-GPU and multi-CPU computation, which may involve refactoring away from OpenCL as support for this standard is waning.
+Work on providing the generic O-Z solver tool that is present in SASFit will begin. Work on support for multi-GPU and multi-CPU computation, which may involve refactoring away from OpenCL as support for this standard is waning. Incorporation of the PRISM[^9] (polymer reference interaction site model) code into SasView.
 
 Task Summary (Subject to the availability of sufficient resources):
 
@@ -135,6 +141,7 @@ Task Summary (Subject to the availability of sufficient resources):
 * Usual bug fixes and other minor improvements as time and interest permit
 *  Integration of McSAS
 *  Begin work on generic O-Z solver
+*  Inclusion of PRISM[^9] functionality
 *  Begin work to refactor/improve generic scattering calculator
 *  Improvements to custom model editors including features from compare.py
 *  Support for multi-GPU, multi-CPU and CPU/GPU computation
