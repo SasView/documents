@@ -29,3 +29,4 @@ more transparency
 ## New/core functionalities
 - Real-time analysis is a ESS/DMSC milestone in 2019 and should  be
   moved forward on the map
+- Complex resolution functions for TOF data will need to be introduced 
