@@ -98,6 +98,9 @@ DAY THREE - Python and scripting: Deep Dive
 
 DAY FOUR - Contributing to SasView - giving back to the community: boot camp!
 ==============================================================================
+
+Tutorials and Setting up
+------------------------
 * How to collaborate: Learning github and trac
 * Overview of git
 * Install git on laptops
