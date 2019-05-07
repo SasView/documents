@@ -98,16 +98,16 @@ DAY THREE - Python and scripting: Deep Dive
 
 DAY FOUR - Contributing to SasView - giving back to the community: boot camp!
 ==============================================================================
-How to collaborate: Learning github and trac
-Overview of git
-Install git on laptops
-Overview of github
-Use git to clone tutorial and sasmodels repos
-Issues, comits and pull requests
-“Advanced git”
-Exercise on ???
-Overview of code layout and different repos (including tutorials)
-Install development environments (what IDE to use + tortoise git?)
+* How to collaborate: Learning github and trac
+* Overview of git
+* Install git on laptops
+* Overview of github
+* Use git to clone tutorial and sasmodels repos
+* Issues, comits and pull requests
+* “Advanced git”
+* Exercise on ???
+* Overview of code layout and different repos (including tutorials)
+* Install development environments (what IDE to use + tortoise git?)
 
 Breakouts
 ---------
