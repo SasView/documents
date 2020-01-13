@@ -160,9 +160,8 @@ Task Summary (Subject to the availability of sufficient resources):
 * Start new workflow/interfaces
 * Usual bug fixes and other minor improvements as time and interest permit
 * Finish work on O-Z solver.
-* Complete work on refactor/improve generic scattering calculator.
 * Headless operation/realtime analysis workflows completed
-* sascalc separation completed
+* Complete work on sascalc separation
 
 **Late 2021 - Mid 2022 (from Code Camp X)  - Release 5.3**
 
@@ -171,6 +170,8 @@ Subject to the availability of sufficient resources, release 5.3 will again try 
 Task Summary (Subject to the availability of sufficient resources):
 
 * Finish advanced model fitting tutorial
+* Complete work on refactor/improve generic scattering calculator
+* Complete work on refactor/improve P(r) perspective
 * Include more workflow/interfaces
 * Begin use case and design on Web interface (with possible smartphone app feature) * initial version can have minimal features but would be useful for demos?
 * Finish outstanding documentation projects
