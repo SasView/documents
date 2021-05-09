@@ -20,7 +20,6 @@ SYSTEM SETUPS
   - [https://livesphinx.herokuapp.com/](https://livesphinx.herokuapp.com/) may not be 100% uptod date with latest Sphinx but good start
 - Latex editor - recommended:
   - [https://www.tutorialspoint.com/latex_equation_editor.htm](https://www.tutorialspoint.com/latex_equation_editor.htm)
-    
   - [https://www.codecogs.com/latex/eqneditor.php](https://www.codecogs.com/latex/eqneditor.php)
 - Latest SasView (to build models the easy way)
 - For full development, Install full build system as described on wiki
