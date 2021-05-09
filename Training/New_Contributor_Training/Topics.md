@@ -24,8 +24,7 @@ TOPICS TO COVER
 
 ## In depth code layout: Where to I start looking for X
 
-## Creating a new model (plugin or not) - demo using simple model that captures 
-the elements
+## Creating a new model (plugin or not) - demo using simple model that captures the elements
 - Sum/multiply
 - Easy editor
 - Editor
@@ -44,8 +43,8 @@ the elements
 - Documents repo (need  tour stops)
 - Tutorials (WEB and builtin) - use fitting as example?
 - Docs and Sphynx (Web AND built in)
- - Dev (need tour stops)
-  - show good, vs nothing=bad (in docs and in code)
- - User (need tour stops)
-  - General - good vs not complete in doc and in code (media vs docs folder for built)
-  - docs
+  - Dev (need tour stops)
+    - show good, vs nothing=bad (in docs and in code)
+  - User (need tour stops)
+    - General - good vs not complete in doc and in code (media vs docs folder for built)
+    - docs
