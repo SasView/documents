@@ -12,6 +12,7 @@ Overview of functionality
 
 Plots and plot menus (linearized fits, theory to points, slicers, etc)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
 Data in and out
 ^^^^^^^^^^^^^^^
 - Load data (files/folders/bad data handling)
@@ -43,11 +44,11 @@ Basic debugging (mostly beginners?)
 - Why those two are not the same now
 - How to read a traceback call
 
-Information or ìhow do I..î
+Information or ‚Äúhow do I..‚Äù
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 - Search term for issues/PR (need script)
 - Wicki (need script)
-- Documents repo (need  ìtour stopsî)
+- Documents repo (need  ‚Äútour stops‚Äù)
 - Tutorials (WEB and builtin) - use fitting as example?
 - Docs and Sphynx (Web AND built in)
  - Dev (need tour stops)
