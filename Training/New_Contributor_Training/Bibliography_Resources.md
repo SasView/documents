@@ -17,6 +17,7 @@ BIBLIOGRAPHY/RESOURCES
 
 ### rst/sphynx rst
 - https://build-me-the-docs-please.readthedocs.io/en/latest/Using_Sphinx/OnReStructuredText.html
+- https://docutils.sourceforge.io/docs/user/rst/quickref.html
 
 ### Markdown
 - https://guides.github.com/features/mastering-markdown/
