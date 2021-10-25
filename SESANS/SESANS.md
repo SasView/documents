@@ -1,4 +1,4 @@
-<! --- Steve King, October 2021 --- >
+<!--- Steve King, October 2021 --->
 # SESANS
 The fitting of SESANS data was incorporated into SasView following
 excellent work by Jurrian Bakker, Wim Bouwman & Steven Parnell at
