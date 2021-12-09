@@ -1,5 +1,5 @@
-TOPICS TO COVER
-===============
+Beyond SasView GUI
+==================
 
 ## Scripting in SasView
 - SasView archiecture
