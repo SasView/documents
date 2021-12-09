@@ -4,6 +4,8 @@ TOPICS TO COVER
 ## Scripting in SasView
 - SasView archiecture
 - SasModels API
+  - https://www.sasview.org/docs/dev/sasmodels-api/modules.html
+  - https://www.sasview.org/docs/dev/sasmodels-dev/index.html
 - Sasmodels components
 - Jupyter notebooks
   - https://github.com/SasView/documents/tree/master/Notebooks
