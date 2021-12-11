@@ -9,8 +9,7 @@ Beyond SasView GUI
   - [Sasmodels components](https://www.sasview.org/docs/dev/sasmodels-dev/index.html)
 - Jupyter notebooks
   - [Detailed Introduction](https://github.com/ess-dmsc-dram/python-course-ikon/blob/master/notebooks/1_jupyter_basics/jupyter-notebook-intro.ipynb) 
-- Jupyter Lab
-  - https://github.com/jupyterlab/jupyterlab-desktop
+  - [Jupyter-Lab](https://github.com/jupyterlab/jupyterlab-desktop)
 - Running sasview on computer cluster
   - https://github.com/SasView/sasmodels/blob/master/example/slurm_batch.py
 
