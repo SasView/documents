@@ -21,8 +21,8 @@ Beyond SasView GUI
 - Simple fitting with sasmodels and bumps
 - P(r) calculation
 - Batch fitting 
-- [More example[(https://github.com/caitwolf/sas-torials/blob/main/mini_tutorials/combined_and_simultaneous_fits.ipynb)
-- 
+- [More example](https://github.com/caitwolf/sas-torials/blob/main/mini_tutorials/combined_and_simultaneous_fits.ipynb)
+
 ## Becoming SasView developer
 - Setting up developers enviroment
   - [Conda enviroment](https://github.com/SasView/sasview/wiki/DevNotes_DevEnviroment)
