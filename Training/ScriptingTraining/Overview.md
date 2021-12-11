@@ -5,7 +5,7 @@ Beyond SasView GUI
 - SasView architecture
 ![SasView archiecture](SasView_structure.png)
 - SasModels API
-  - https://www.sasview.org/docs/dev/sasmodels-api/modules.html
+  - [Documentation](https://www.sasview.org/docs/dev/sasmodels-api/modules.html)
 - Sasmodels components
   - https://www.sasview.org/docs/dev/sasmodels-dev/index.html
 - Jupyter notebooks
