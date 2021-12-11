@@ -1,10 +1,13 @@
-TOPICS TO COVER
-===============
+Beyond SasView GUI
+==================
 
 ## Scripting in SasView
 - SasView archiecture
+- ![image](SasView_structure.png)
 - SasModels API
+  - https://www.sasview.org/docs/dev/sasmodels-api/modules.html
 - Sasmodels components
+  - https://www.sasview.org/docs/dev/sasmodels-dev/index.html
 - Jupyter notebooks
   - https://github.com/SasView/documents/tree/master/Notebooks
   - https://github.com/caitwolf/sas-torials/blob/main/mini_tutorials/combined_and_simultaneous_fits.ipynb 
