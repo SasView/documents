@@ -15,7 +15,7 @@ Beyond SasView GUI
   - https://github.com/SasView/sasmodels/blob/master/example/slurm_batch.py
 
 ## Exercises
-- **Please download [Jupyter-Lab app](https://github.com/jupyterlab/jupyterlab-desktop) if you want to follow exercises***
+- **Please download and install [Jupyter-Lab app](https://github.com/jupyterlab/jupyterlab-desktop) if you want to follow exercises**
 - Installing required packages
 - Compute sasmodel model
 - Simple fitting with sasmodels and bumps
