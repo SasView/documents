@@ -3,7 +3,7 @@ Beyond SasView GUI
 
 ## Scripting in SasView
 - SasView architecture
- - ![SasView archiecture](SasView_structure.png)
+![SasView archiecture](SasView_structure.png)
 - [Dependencies](SasView_dependencies.png)
 - SasModels API
   - [Sasmodels parts](sasmodels_parts.png)
