@@ -32,9 +32,9 @@ Beyond SasView GUI
   - [Pycharm](https://www.jetbrains.com/pycharm/)
   - [Vs Code](https://code.visualstudio.com/)
 - Github workflow
-  - [Introduction](https://github.com/SasView/documents/blob/master/Training/New_Contributor_Training/presentations/IntroductionToGit.pdf)
+  - [Introduction](https://github.com/SasView/documents/blob/master/Training/New_Contributor_Training/presentations/IntroductionToGit.pdf) (Credit Paul Butler)
   - Good first issue
   - Creating branch
   - Creating PR
 - Where to start coding particular functionality
-  - [GUI - code maping](https://github.com/SasView/documents/blob/master/Training/New_Contributor_Training/presentations/CodingBeyondTheModels.pdf)
+  - [GUI - code maping](https://github.com/SasView/documents/blob/master/Training/New_Contributor_Training/presentations/CodingBeyondTheModels.pdf) (Credit Jeff Krzywon)
