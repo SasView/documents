@@ -4,7 +4,10 @@ Beyond SasView GUI
 ## Scripting in SasView
 - SasView architecture
 ![SasView archiecture](SasView_structure.png)
+- Dependencies
+![SasView dependencies](SasView_structure.png)
 - SasModels API
+![Sasmodels part](sasmodels_parts.png)
   - [Sasmodels API Documentation](https://www.sasview.org/docs/dev/sasmodels-api/modules.html)
   - [Sasmodels components](https://www.sasview.org/docs/dev/sasmodels-dev/index.html)
 - Jupyter notebooks
@@ -12,7 +15,6 @@ Beyond SasView GUI
   - [Jupyter-Lab](https://github.com/jupyterlab/jupyterlab-desktop)
 - Running sasview on computer cluster
   - https://github.com/SasView/sasmodels/blob/master/example/slurm_batch.py
-
 ## Exercises
 - **Please download and install [Jupyter-Lab app](https://github.com/jupyterlab/jupyterlab-desktop) if you want to follow exercises**
 - Installing required packages
