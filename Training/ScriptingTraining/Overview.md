@@ -4,10 +4,9 @@ Beyond SasView GUI
 ## Scripting in SasView
 - SasView architecture
  - ![SasView archiecture](SasView_structure.png)
-- Dependencies
- - ![SasView dependencies](SasView_dependencies.png)
+- [Dependencies](SasView_dependencies.png)
 - SasModels API
-  - ![Sasmodels part](sasmodels_parts.png)
+  - [Sasmodels parts](sasmodels_parts.png)
   - [Sasmodels API Documentation](https://www.sasview.org/docs/dev/sasmodels-api/modules.html)
   - [Sasmodels components](https://www.sasview.org/docs/dev/sasmodels-dev/index.html)
 - Jupyter notebooks
