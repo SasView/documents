@@ -12,9 +12,10 @@ Beyond SasView GUI
 - Jupyter notebooks
   - [Detailed Introduction](https://github.com/ess-dmsc-dram/python-course-ikon/blob/master/notebooks/1_jupyter_basics/jupyter-notebook-intro.ipynb) 
   - [Jupyter-Lab](https://github.com/jupyterlab/jupyterlab-desktop)
+  - [Anaconda](https://www.anaconda.com/products/individual)
 - [Running sasview on computer cluster](https://github.com/SasView/sasmodels/blob/master/example/slurm_batch.py)
 ## Exercises
-- **Please download and install [Jupyter-Lab app](https://github.com/jupyterlab/jupyterlab-desktop) if you want to follow exercises**
+- **Please download and install [Anaconda](https://www.anaconda.com/products/individual) and make sure you can access Anaconda Navigator if you want to follow exercises**
 - Installing required packages
 - Compute sasmodel model
 - Simple fitting with sasmodels and bumps
