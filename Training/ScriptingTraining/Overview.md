@@ -24,7 +24,7 @@ Beyond SasView GUI
 - [More examples](https://github.com/caitwolf/sas-torials/blob/main/mini_tutorials/combined_and_simultaneous_fits.ipynb) (Credit Caitlyn Wolf)
 
 ## Becoming SasView developer
-- Setting up developers enviroment
+- Setting up developers environment 
   - [Conda enviroment](https://github.com/SasView/sasview/wiki/DevNotes_DevEnviroment)
 - Accounts and emails
   - Github and slack  account 
