@@ -7,7 +7,7 @@ Beyond SasView GUI
 - [Dependencies](SasView_dependencies.png)
 - SasModels API
   - [Sasmodels components](sasmodels_parts.png)
-  - [Sasmodels components](https://www.sasview.org/docs/dev/sasmodels-dev/index.html)
+  - [Sasmodels components (docs)](https://www.sasview.org/docs/dev/sasmodels-dev/index.html)
   - [Sasmodels API Documentation](https://www.sasview.org/docs/dev/sasmodels-api/modules.html)  
 - Jupyter notebooks
   - [Detailed Introduction](https://github.com/ess-dmsc-dram/python-course-ikon/blob/master/notebooks/1_jupyter_basics/jupyter-notebook-intro.ipynb) 
