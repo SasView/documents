@@ -34,7 +34,7 @@ Beyond SasView GUI (Online Training: Dec 16th 2021)
 - Setting up developers environment 
   - [Conda enviroment](https://github.com/SasView/sasview/wiki/DevNotes_DevEnviroment)
 - Accounts and emails
-  - Github and slack  account 
+  - [Github and slack accounts](https://github.com/SasView/sasview/wiki/DevNotes_DevGuide_GettingStarted) 
 - IDEs
   - [Pycharm](https://www.jetbrains.com/pycharm/)
   - [Vs Code](https://code.visualstudio.com/)
