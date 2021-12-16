@@ -12,6 +12,7 @@ Beyond SasView GUI (Online Training: Dec 16th 2021)
 - [Dependencies](SasView_dependencies.png)
 - SasModels API
   - [Sasmodels components](sasmodels_main_components.png)
+  - [Example: Sphere model](https://github.com/SasView/sasmodels/blob/master/sasmodels/models/sphere.py)
   - [Sasmodels components (docs)](https://www.sasview.org/docs/dev/sasmodels-dev/index.html)
   - [Sasmodels API Documentation](https://www.sasview.org/docs/dev/sasmodels-api/modules.html)  
 - Jupyter notebooks
