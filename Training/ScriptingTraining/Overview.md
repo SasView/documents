@@ -30,7 +30,7 @@ Beyond SasView GUI (Online Training: Dec 16th 2021)
 - Batch fitting 
 - [More examples](https://github.com/caitwolf/sas-torials/blob/main/mini_tutorials/) (Credit Caitlyn Wolf)
 
-## Becoming SasView developer
+## Becoming SasView contributor
 - Setting up developers environment 
   - [Conda enviroment](https://github.com/SasView/sasview/wiki/DevNotes_DevEnviroment)
 - Accounts and emails
