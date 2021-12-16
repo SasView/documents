@@ -1,5 +1,10 @@
-Beyond SasView GUI
-==================
+Beyond SasView GUI (Online Training: Dec 16th 2021)
+===================================================
+## Checklist
+- New participants?
+- Who has Anaconda installed?
+- Recording
+- 5.0.5rc1 is out: https://github.com/SasView/sasview/releases/tag/v5.0.5rc1
 
 ## Scripting in SasView
 - SasView architecture
