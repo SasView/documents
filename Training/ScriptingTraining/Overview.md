@@ -21,6 +21,7 @@ Beyond SasView GUI (Online Training: Dec 16th 2021)
 - [Running sasview on computer cluster](https://github.com/SasView/sasmodels/blob/master/example/slurm_batch.py)
 ## Exercises
 - **Please download and install [Anaconda](https://www.anaconda.com/products/individual) and make sure you can access Anaconda Navigator if you want to follow exercises**
+- https://github.com/wpotrzebowski/sasview_scripting
 - Installing required packages
 - Compute sasmodel model
 - Simple fitting with sasmodels and bumps
