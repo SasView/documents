@@ -56,11 +56,10 @@ Task Summary (Subject to the availability of sufficient resources):
 * Work to update tutorials to support 5.x
 * Begin work on advanced model fitting tutorial
 * Usual bug fixes and other minor improvements as time and interest permit
-*  Integration of McSAS
+*  Integration of McSAS and FFSAS
 *  Begin work on generic O-Z solver
 *  Inclusion of PRISM[^9] functionality
-*  Begin work to refactor/improve generic scattering calculator
-*  Improvements to custom model editors including features from compare.py
+*  Complete work to refactor/improve generic scattering calculator
 *  Support for multi-GPU, multi-CPU and CPU/GPU computation
 *  Complete SasView paper
 *  Create plan for developing community interactions.
