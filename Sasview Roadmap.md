@@ -56,13 +56,16 @@ Task Summary (Subject to the availability of sufficient resources):
 * Work to update tutorials to support 5.x
 * Begin work on advanced model fitting tutorial
 * Usual bug fixes and other minor improvements as time and interest permit
-*  Integration of McSAS and FFSAS
-*  Begin work on generic O-Z solver
-*  Inclusion of PRISM[^9] functionality
-*  Complete work to refactor/improve generic scattering calculator
-*  Support for multi-GPU, multi-CPU and CPU/GPU computation
-*  Complete SasView paper
-*  Create plan for developing community interactions.
+* Integration of McSAS and FFSAS
+* Begin work on generic O-Z solver
+* Inclusion of PRISM[^9] functionality
+* Complete work to refactor/improve generic scattering calculator
+* Support for multi-GPU, multi-CPU and CPU/GPU computation
+* Complete SasView paper
+* Create plan for developing community interactions.
+* Begin work on incorporating polyhedral form factors
+* Continue work on graphical represtation of models
+* Begin work on SAXS/SANS co-refinement
 
 **Late 2022 - Mid 2023 - Release 5.1**
 
@@ -76,8 +79,9 @@ Task Summary (Subject to the availability of sufficient resources):
 * Start new workflow/interfaces
 * Usual bug fixes and other minor improvements as time and interest permit
 * Finish work on O-Z solver.
-* Complete work on refactor/improve generic scattering calculator.
+* Extend generic scattering calculator with SPONGE and McSim.
 * Complete work on refactor/improve P(R) inversion
+* Complete work on SAXS/SANS co-refinement
 
 **Late 2023 - Mid 2024  - Release 5.2**
 
