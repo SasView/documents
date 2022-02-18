@@ -222,4 +222,5 @@ Subject to the availability of sufficient resources, release 6.x will again try 
 
 * 2015-11-24	: First release
 * 2016-10-11	: Updated after Code Camp V discussions
-* 2018-09-07     : Updated after Code Camp VI & VII discussions
+* 2018-09-07 : Updated after Code Camp VI & VII discussions
+* 2022-02-18 : Updated after magnetic SANS discussions
