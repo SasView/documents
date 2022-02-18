@@ -66,6 +66,7 @@ Task Summary (Subject to the availability of sufficient resources):
 * Begin work on incorporating polyhedral form factors
 * Continue work on graphical represtation of models
 * Begin work on SAXS/SANS co-refinement
+* Begin work on incorporating generic resolution functions
 
 **Late 2022 - Mid 2023 - Release 5.1**
 
@@ -82,6 +83,7 @@ Task Summary (Subject to the availability of sufficient resources):
 * Extend generic scattering calculator with SPONGE and McSim.
 * Complete work on refactor/improve P(R) inversion
 * Complete work on SAXS/SANS co-refinement
+* Complete work on incorporating generic resolution functions
 
 **Late 2023 - Mid 2024  - Release 5.2**
 
