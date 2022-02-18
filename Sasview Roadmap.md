@@ -44,8 +44,7 @@ Every release should include bug fixes and new models as requests come in.  Thes
 
 **Late 2021 to mid 2022 Release 5.0.5**
 
-Subject to the availability of sufficient resources, release 5.0.5. Work will start on refactoring fitting to allow, for example custom re-parameterization of models (e.g. replace SLD with fraction of solvent in layer), using an input array for P or S in a P*S model, fitting oriented model to 1D cut etc. Work will begin on refactoring the simultaneous/constrained fitting workflow interface and on custom workflows identified as highest priority and having a well developed design. User documentation/tutorials will be reviewed, an advanced "how to fit my data" tutorial will be started, and an architecture manual begun. McSAS will be integrated into SasView, giving users an  approach to obtaining particle size distributions.
-Work on providing the generic O-Z solver tool that is present in SASFit will begin. Work on support for multi-GPU and multi-CPU computation, which may involve refactoring away from OpenCL as support for this standard is waning. Incorporation of the PRISM[^9] (polymer reference interaction site model) code into SasView.
+Subject to the availability of sufficient resources, release 5.0.5. Work will start on refactoring fitting to allow, for example custom re-parameterization of models (e.g. replace SLD with fraction of solvent in layer), using an input array for P or S in a P*S model, fitting oriented model to 1D cut etc. Work will begin on refactoring the simultaneous/constrained fitting workflow interface and on custom workflows identified as highest priority and having a well developed design.  Work on new workflow/interfaces for contrast variation for example and new magnetic scattering workflows will begin. User documentation/tutorials will be reviewed, an advanced "how to fit my data" tutorial will be started, and an architecture manual begun.
 
 Task Summary (Subject to the availability of sufficient resources):
 
@@ -55,35 +54,36 @@ Task Summary (Subject to the availability of sufficient resources):
 * Begin work on adding custom workflows identified as highest priority 
 * Work to update tutorials to support 5.x
 * Begin work on advanced model fitting tutorial
-* Usual bug fixes and other minor improvements as time and interest permit
-* Integration of McSAS and FFSAS
-* Begin work on generic O-Z solver
-* Inclusion of PRISM[^9] functionality
 * Complete work to refactor/improve generic scattering calculator
-* Support for multi-GPU, multi-CPU and CPU/GPU computation
 * Complete SasView paper
 * Create plan for developing community interactions.
 * Begin work on incorporating polyhedral form factors
 * Continue work on graphical represtation of models
 * Begin work on SAXS/SANS co-refinement
 * Begin work on incorporating generic resolution functions
+* Usual bug fixes and other minor improvements as time and interest permit
 
 **Late 2022 - Mid 2023 - Release 5.1**
 
-Subject to the availability of sufficient resources, release 5.1 will provide new fitting functionality such as custom re-parameterization of models, allow reading in an array representing either PQ or SQ for P*S, fitting oriented model to 1D cut etc. The refactored workflow interfaces for constrained/simultaneous fits and batch fitting and plotting module will be deployed in this release.  Work will continue on an advanced data fitting with SasView tutorial.  Work on new workflow/interfaces for contrast variation for example and new magnetic scattering workflows will begin.  These workflows are not expected to be in the release however. Generic O-Z solver will be available in this release.
+Subject to the availability of sufficient resources, release 5.1 will provide new fitting functionality such as custom re-parameterization of models, allow reading in an array representing either PQ or SQ for P*S, fitting oriented model to 1D cut etc. The refactored workflow interfaces for constrained/simultaneous fits and batch fitting and plotting module will be deployed in this release.  Work will continue on an advanced data fitting with SasView tutorial.  These workflows are not expected to be in the release however. Work on providing the generic O-Z solver tool that is present in SASFit will begin. Work on support for multi-GPU and multi-CPU computation, which may involve refactoring away from OpenCL as support for this standard is waning. Incorporation of the PRISM[^9] (polymer reference interaction site model) code into SasView. McSAS and FFSAS will be integrated into SasView, giving users an approach to obtaining particle size distributions.
 
 Task Summary (Subject to the availability of sufficient resources):
 
 * Finish fitting refactoring work to allow custom re-parameterization of models, allow reading in an array representing either PQ or SQ for P*S fits, fitting oriented model to 1D cut etc.
 * Refactor simultaneous/constrained workflow interface
+* Integration of McSAS and FFSAS
+* Begin work on generic O-Z solver
+* Inclusion of PRISM[^9] functionality
 * Continue development of advanced fitting tutorial
 * Start new workflow/interfaces
-* Usual bug fixes and other minor improvements as time and interest permit
+* Support for multi-GPU, multi-CPU and CPU/GPU computation
 * Finish work on O-Z solver.
 * Extend generic scattering calculator with SPONGE and McSim.
 * Complete work on refactor/improve P(R) inversion
 * Complete work on SAXS/SANS co-refinement
 * Complete work on incorporating generic resolution functions
+* Community meeting at SAS2022
+* Usual bug fixes and other minor improvements as time and interest permit
 
 **Late 2023 - Mid 2024  - Release 5.2**
 
