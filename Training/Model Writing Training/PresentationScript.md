@@ -35,6 +35,10 @@ python code to C fairly simple.  The list is given in the documentation above an
   * On the model marketplace (marketplace.sasview.org).  This contains not only all the contributed models but also the “built-in” ones.
   Those listed as submitted by “sasview” are those delivered with the installer. Also currently all the contributed models are labeled with
   an x, meaning “not reviewed.” The aspiration is that one day they will be reviewed and given a green check as well.
+  * custom built (plugin models) usually go in the user's directory under .sasview/plugin_models.  If a model is added here while SasView GUI
+  is running, it will not show up in the GUI till the next time the GUI is started. Alternatively one can go to the Fitting menu item and select the
+  `Edit Custom Model` (or the `Manage Custom Models` and choose `Edit`) and load the .py file just dumped into the directory. Then hit `Save`.
+  If there are no errors that should force the GUI to find the new model
 * Firstly we need to dispel a persistent myth/rumor: there is fundamentally zero difference between a plugin model and a “built-in” model
 delivered with SasView. There are however differences in how the GUI handles them. In fact some (but not all) of that can be mitigated by
 “cheating” and putting a new model into the sasviewX.X program folder rather than in the plugin directory.
