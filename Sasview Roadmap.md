@@ -46,14 +46,14 @@ Every release should include bug fixes and new models as requests come in.  Thes
 
 Due to an oversight the last update to the Roadmap failed to record a number of SasView releases which we correct here:
 
-    * Oct 2018: <https://github.com/SasView/sasview/releases/tag/v4.2.0>  
-    * Feb 2019: <https://github.com/SasView/sasview/releases/tag/v4.2.1>
-    * May 2019: <https://github.com/SasView/sasview/releases/tag/v4.2.2>
-    * May 2019: <https://github.com/SasView/sasview/releases/tag/v5.0.0>
-    * Feb 2020: <https://github.com/SasView/sasview/releases/tag/v5.0.1>
-    * Apr 2020: <https://github.com/SasView/sasview/releases/tag/v5.0.2>
-    * Jul 2020: <https://github.com/SasView/sasview/releases/tag/v5.0.3>
-    * Apr 2021: <https://github.com/SasView/sasview/releases/tag/v5.0.4>
+* Oct 2018: <https://github.com/SasView/sasview/releases/tag/v4.2.0>  
+* Feb 2019: <https://github.com/SasView/sasview/releases/tag/v4.2.1>
+* May 2019: <https://github.com/SasView/sasview/releases/tag/v4.2.2>
+* May 2019: <https://github.com/SasView/sasview/releases/tag/v5.0.0>
+* Feb 2020: <https://github.com/SasView/sasview/releases/tag/v5.0.1>
+* Apr 2020: <https://github.com/SasView/sasview/releases/tag/v5.0.2>
+* Jul 2020: <https://github.com/SasView/sasview/releases/tag/v5.0.3>
+* Apr 2021: <https://github.com/SasView/sasview/releases/tag/v5.0.4>
 
 Most notable here was the move from Python2/wxPython in SasView version 4.x to Python3/pyQt in SasView version 5.x.
 
