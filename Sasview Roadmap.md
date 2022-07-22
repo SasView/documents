@@ -50,13 +50,14 @@ Task Summary:
 
 * A sasmodels interface for custom re-parameterization of models is provided. 
 * Continued work on refactoring constrained/simultaneous fits.
-* Work to update tutorials to support 5.x
 * The generic scattering calculator was significcantly overhauled particularly for use with magnetic materials
 * Started developing ideas for community interactions and hostes several training workshops (some virtual)
 * Work on incorporating polyhedral form factors continued
 * Work on graphical represtation of models continued
 * An intial feature to aid SAXS/SANS co-refinement was added.
 * Work on defining and incorporating generic resolution functions was started
+* Work to update tutorials to support 5.x
+* Work on SasView paper continued
 * AS usual, a large number of bug fixes and other minor improvements
 
 SasView 5.0.5 was released on June 3, 2022.
@@ -64,28 +65,23 @@ SasView 5.0.5 was released on June 3, 2022.
 
 **Late 2022 - Mid 2023 - Release 5.1**
 
-Subject to the availability of sufficient resources, release 5.1 will provide new fitting functionality such as allowing for the reading in an array representing either PQ or SQ for P\*S, fitting oriented model to 1D cut etc. The refactored workflow interfaces for constrained/simultaneous fits and batch fitting and plotting module will be deployed in this release.  Work will continue on an advanced data fitting with SasView tutorial. Work on providing the generic O-Z solver tool that is present in SASFit will begin. Work on support for multi-GPU and multi-CPU computation, which may involve refactoring away from OpenCL as support for this standard is waning. Incorporation of the PRISM[^9] (polymer reference interaction site model) code into SasView will begin. McSAS and FFSAS will be integrated into SasView, giving users an approach to obtaining particle size distributions.
+The primary goal, and therefore focus of work, for release 5.1 is to achieve full feature parity with the 4.x versions. While 5.x has many new features and advances there remain a number of outstanding issues taged with the "For Feature Parity" label in github. Subject to the availability of sufficient resources, release 5.1 will also add new fitting functionality such as allowing for the reading in an array representing either P(Q) or S(Q) for P\*S, fitting oriented model to 1D cut etc.; begin work on adding PRISM[^9] (polymer reference interaction site model), McSAS and FFSAS (providing users better approaches for obtaining particle size distributions) fitting modules; add new scattering calculators to the generic scattering calculator and add improved functionatly to the P(R) perspective.  Work will continue on an advanced data fitting with SasView tutorial. On the documentation and community development fronts, work will continue to expand and diversify the contributor community, several new tutorials, both written and video, will be started, and the SasView paper will be submitted.
 
 Task Summary (Subject to the availability of sufficient resources):
 
-* Begin model fitting refactoring work to allow reading in an array representing either PQ or SQ for P*S fits, fitting oriented model to 1D cut etc.
+* Begin model fitting refactoring work to allow reading in an array representing either PQ or SQ for P*/S fits, fitting oriented model to 1D cut etc.
 * Refactor simultaneous/constrained workflow interface
 * Begin work on advanced model fitting tutorial
-* Integration of McSAS and FFSAS
-* Begin work on generic O-Z solver
-* Complete architecture manual
-* Begin work on adding custom workflows identified as highest priority 
-* Inclusion of PRISM[^9] functionality
-* Continue development of advanced fitting tutorial
-* Start new workflow/interfaces
+* Begin work on writing custom models tutorial
+* Create first in series of video tutorials.
+* Begin work to integrate McSAS and FFSAS
+* Begin work on inclusion of PRISM[^9] functionality
 * Complete SasView paper
-* Support for multi-GPU, multi-CPU and CPU/GPU computation
-* Finish work on O-Z solver.
-* Extend generic scattering calculator with SPONGE and McSim.
-* Complete work on refactor/improve P(R) inversion
-* Complete work on SAXS/SANS co-refinement
-* Complete work on incorporating generic resolution functions
-* Community meeting at SAS2022
+* Continue work to expand the size and diversity of the contributor commmunity
+* Begin adding other algorithms to the generic scattering calculator such as SPONGE, McSim, Golden Vector approach etc.
+* Add tabbed and batch functionality to P(R) inversion to match fitting perspective functionality
+* Continue discussions on how to address mutlimodal fitting.
+* Continue work on developing more advanced resolution calculations in co-operation with NXcanSAS group (e.g. generic resolution functions etc)
 * Usual bug fixes and other minor improvements as time and interest permit
 
 **Late 2023 - Mid 2024  - Release 5.2**
@@ -95,9 +91,18 @@ Subject to the availability of sufficient resources, release 5.2 will again try 
 Task Summary (Subject to the availability of sufficient resources):
 
 * Finish advanced model fitting tutorial
+* work on refactor/improve P(R) inversion by adding full automation of parameter choices, 2D as well as 1D P(R), and/or other algorithms
+* begin work on architecture manual
 * Include more workflow/interfaces
+* Finish work on advanced model fitting tutorial
+* Finish work on writing custom models tutorial
+* Create more video tutorials.
 * Begin use case and design on Web interface (with possible smartphone app feature) * initial version can have minimal features but would be useful for demos?
+* Support for multi-GPU, multi-CPU and CPU/GPU computation
+* Begin work on adding custom workflows identified as highest priority 
 * Finish outstanding documentation projects
+* Complete work on incorporating generic resolution functions
+* Begin work on generic O-Z solver
 * Prioritize new documentation tasks
 * Usual bug fixes and other minor improvements as time and interest permit
 * Headless operation/realtime analysis workflows started
@@ -112,6 +117,7 @@ Task Summary (Subject to the availability of sufficient resources):
 * Start including intelligent limits/help (possibly include switch between enforcement and warning only) and explore the use of wizards in some cases
 * Continue work on web UI and smartphone app
 * ASAXS support added 
+* Finish work on O-Z solver.
 * Add extra SAXS specific needs as appropriate
 * Enable computational code to run on clusters and refactor GUI to add an intelligent launcher/scheduler that makes the use of a cluster back end transparent to the user
 * Documentation tasks as determined during previous code camp or fortnightly meetings
