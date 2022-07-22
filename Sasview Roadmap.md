@@ -70,12 +70,13 @@ The primary goal, and therefore focus of work, for release 5.1 is to achieve ful
 Task Summary (Subject to the availability of sufficient resources):
 
 * Begin model fitting refactoring work to allow reading in an array representing either PQ or SQ for P*/S fits, fitting oriented model to 1D cut etc.
-* Refactor simultaneous/constrained workflow interface
+* Finish initial simultaneous/constrained workflow upgrades 
 * Begin work on advanced model fitting tutorial
 * Begin work on writing custom models tutorial
 * Create first in series of video tutorials.
 * Begin work to integrate McSAS and FFSAS
 * Begin work on inclusion of PRISM[^9] functionality
+* Begin work on separating out a generic dataloader package
 * Complete SasView paper
 * Continue work to expand the size and diversity of the contributor commmunity
 * Begin adding other algorithms to the generic scattering calculator such as SPONGE, McSim, Golden Vector approach etc.
@@ -86,31 +87,36 @@ Task Summary (Subject to the availability of sufficient resources):
 
 **Late 2023 - Mid 2024  - Release 5.2**
 
-Subject to the availability of sufficient resources, release 5.2 will again try place an emphasis on addressing requests for smaller feature enhancements and improvements to the interface and workflow.  It will also include some new workflow interfaces.  Use cases and design development will commence on a web interface (possibly including smartphone app capabilities). Advanced fitting tutorial and other unfinished documentation projects will be completed. Review all documentation and prioritize needs for next release. Work on integration of SasView into realtime analysis workflows at beamlines will begin.
+Subject to the availability of sufficient resources, release 5.2 will focus on adding major new functionality along with the usual bug fixes and minor improviements. In particular, The McSAS, FFSAS and PRISM modules should be incorporated into this release along with some more advanced resolution calculation options. New real space to Fourier space calculators may continue to be added to the general scattering calculator and some new tools for multimodal analysis may begin to show up in this release as well.  Use cases and design development will commence on a web interface (possibly including smartphone app capabilities), along with work on some infrastructure projects such as separating out the GUI package from the calculation package and providing more robust parallel processing support. Meanwhile, tutorial and community development efforts will continue while an effort will be made to develop sustainable plans for documentation maintenance and development writ large. 
 
 Task Summary (Subject to the availability of sufficient resources):
 
-* Finish advanced model fitting tutorial
-* work on refactor/improve P(R) inversion by adding full automation of parameter choices, 2D as well as 1D P(R), and/or other algorithms
+* Finish model fitting refactoring work to allow reading in an array representing either PQ or SQ for P*/S fits, fitting oriented model to 1D cut etc.
+* Finish work to integrate McSAS and FFSAS
+* Finish work on inclusion of PRISM[^9] functionality
+* Finish work on separating out a generic dataloader package
+* Begin work on separating out sascalc package
+* Begin work to refactor/improve P(R) inversion by adding full automation of parameter choices, 2D as well as 1D P(R), and/or other algorithms
 * begin work on architecture manual
-* Include more workflow/interfaces
 * Finish work on advanced model fitting tutorial
 * Finish work on writing custom models tutorial
+* Start work on at least one more tutorial as appropriate
+* Continue work to expand the size and diversity of the contributor commmunity
 * Create more video tutorials.
 * Begin use case and design on Web interface (with possible smartphone app feature) * initial version can have minimal features but would be useful for demos?
-* Support for multi-GPU, multi-CPU and CPU/GPU computation
-* Begin work on adding custom workflows identified as highest priority 
-* Finish outstanding documentation projects
-* Complete work on incorporating generic resolution functions
+* Expand parallel processing support for multi-GPU, multi-CPU and CPU/GPU computation
+* Continue adding other algorithms to the generic scattering calculator such as SPONGE, McSim, Golden Vector approach etc.
+* Start implementing further tools/algorithms to aid mutlimodal fitting as appropriate.
+* Complete implementation of first advanced resolution calculations subject to sufficient community agreement
 * Begin work on generic O-Z solver
-* Prioritize new documentation tasks
+* Develop documentation maintenance and development strategy
 * Usual bug fixes and other minor improvements as time and interest permit
-* Headless operation/realtime analysis workflows started
 
 
 **Late 2024 - Mid 2025 - Release 5.3 / Release 6.0 alpha/beta**
 
-Subject to the availability of sufficient resources, release 5.3 will start providing intelligent feedback on unreasonable choices.  Transition will start to the 6.x release series as support for ASAXS is added and other SAXS specific tools/workflows are added as needed.  Web UI work will continue but is not expected to be ready for this release.  Finally work will begin to allow computational code to run on a cluster and an intelligent launcher/scheduler design started for the GUI frontend which will make the use of the a cluster backend transparent to the user. Include documentation tasks prioritized in previous round. Integration of SasView into a realtime analysis workflow on beamlines will be completed.
+Subject to the availability of sufficient resources, release 5.3 will start providing intelligent feedback on unreasonable choices.  Transition will start to the 6.x release series as support for ASAXS is added and other SAXS specific tools/workflows are added as needed.  Web UI work will continue but is not expected to be ready for this release.  Finally work will begin to allow computational code to run on a cluster and an intelligent launcher/scheduler design started for the GUI frontend which will make the use of the a cluster backend transparent to the user. Include documentation tasks prioritized in previous round. Integration of SasView into a realtime analysis workflow on beamlines will be completed.Work on integration of SasView into realtime analysis workflows at beamlines will begin.
+
 
 Task Summary (Subject to the availability of sufficient resources):
 
@@ -120,6 +126,7 @@ Task Summary (Subject to the availability of sufficient resources):
 * Finish work on O-Z solver.
 * Add extra SAXS specific needs as appropriate
 * Enable computational code to run on clusters and refactor GUI to add an intelligent launcher/scheduler that makes the use of a cluster back end transparent to the user
+* Headless operation/realtime analysis workflows started
 * Documentation tasks as determined during previous code camp or fortnightly meetings
 * Headless operation and realtime analysis workflows completed.
 * Usual bug fixes and other minor improvements as time and interest permit
