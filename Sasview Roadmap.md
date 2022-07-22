@@ -59,7 +59,7 @@ Most notable here was the move from Python2/wxPython in SasView version 4.x to P
 
 **Late 2021 to mid 2022 - Release 5.0.5**
 
-Due to the pandemic the 2020 code camp scheduled for March 20 in Caltech was canceled and did not resume for another 2 + years.  An attempt was made to pivot to short virtual hackathons with some success but the progress was clearly impacted, nonetheless, release 5.0.5 provided was released with some new feature and a number of issues fixed. In particular the generic scattering calculator got its first much needed overhaul, this one focused on the needs of the magnetic scattering community. Also a first pass at providing at least some very rudimentary tools for SAXS/SANS co-refinement was added with an eye to better understanding the complicated issues involved in co-refinement of data from different techniques. Work will begin on refactoring the simultaneous/constrained fitting workflow interface.
+Due to the pandemic the Code Camp scheduled for March 2020 in Caltech was canceled and did not resume for another 2+ years.  An attempt was made to pivot to short virtual hackathons with some success but the progress was clearly impacted, nonetheless, release 5.0.5 provided some new features and resolved a number of issues. In particular, the generic scattering calculator got its first much needed overhaul, this one focused on the needs of the magnetic scattering community. Work will begin on refactoring the simultaneous/constrained fitting workflow interface.
 
 Task Summary:
 
@@ -85,6 +85,7 @@ The primary goal, and therefore focus of work, for release 5.1 is to achieve ful
 Task Summary (Subject to the availability of sufficient resources):
 
 * Begin model fitting refactoring work to allow reading in an array representing either PQ or SQ for P*/S fits, fitting oriented model to 1D cut etc.
+* Implement a first pass at providing (some rudimentary) tools for SAXS/SANS co-refinement (with an eye to better understanding the complicated issues involved in co-refinement of data from different techniques) 
 * Finish initial simultaneous/constrained workflow upgrades 
 * Begin work on advanced model fitting tutorial
 * Begin work on writing custom models tutorial
