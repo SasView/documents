@@ -100,7 +100,7 @@ Task Summary (Subject to the availability of sufficient resources):
 * begin work on architecture manual
 * Finish work on advanced model fitting tutorial
 * Finish work on writing custom models tutorial
-* Start work on at least one more tutorial as appropriate
+* Create at least one more tutorial as appropriate
 * Continue work to expand the size and diversity of the contributor commmunity
 * Create more video tutorials.
 * Begin use case and design on Web interface (with possible smartphone app feature) * initial version can have minimal features but would be useful for demos?
@@ -115,46 +115,59 @@ Task Summary (Subject to the availability of sufficient resources):
 
 **Late 2024 - Mid 2025 - Release 5.3 / Release 6.0 alpha/beta**
 
-Subject to the availability of sufficient resources, release 5.3 will start providing intelligent feedback on unreasonable choices.  Transition will start to the 6.x release series as support for ASAXS is added and other SAXS specific tools/workflows are added as needed.  Web UI work will continue but is not expected to be ready for this release.  Finally work will begin to allow computational code to run on a cluster and an intelligent launcher/scheduler design started for the GUI frontend which will make the use of the a cluster backend transparent to the user. Include documentation tasks prioritized in previous round. Integration of SasView into a realtime analysis workflow on beamlines will be completed.Work on integration of SasView into realtime analysis workflows at beamlines will begin.
+Subject to the availability of sufficient resources, release 5.3 will focus on wrapping up some new features and preparing for more distributed operation (web app, allowing computational code to run on a cluster with an intelligent launcher/scheduler for the GUI frontend which will make the use of the a cluster backend transparent to the user, data pipelining etc), as well as starting work on providing intelligent feedback.  However, while the web UI and remote job operation work will continue, is not expected to be ready for this release. Meanwhile, tutorial and community development efforts will continue and documentation tasks as envisoned in the documentation strategy exercices will be worked on.
 
 
 Task Summary (Subject to the availability of sufficient resources):
 
-* Start including intelligent limits/help (possibly include switch between enforcement and warning only) and explore the use of wizards in some cases
-* Continue work on web UI and smartphone app
-* ASAXS support added 
-* Finish work on O-Z solver.
-* Add extra SAXS specific needs as appropriate
+* Complete work on separating out sascalc package
 * Enable computational code to run on clusters and refactor GUI to add an intelligent launcher/scheduler that makes the use of a cluster back end transparent to the user
-* Headless operation/realtime analysis workflows started
-* Documentation tasks as determined during previous code camp or fortnightly meetings
-* Headless operation and realtime analysis workflows completed.
+* Begin work on implementing headless operation/realtime analysis workflows
+* Finish work to refactor/improve P(R) inversion by adding full automation of parameter choices, 2D as well as 1D P(R), and/or other algorithms
+* Finish work on architecture manual
+* Create at least one more tutorial as appropriate
+* Continue work to expand the size and diversity of the contributor commmunity
+* Create at least one more video tutorials.
+* Continue implementing further tools/algorithms to aid mutlimodal fitting as appropriate.
+* Start including intelligent limits/help (possibly include switch between enforcement and warning only) and explore the use of wizards and AI
+* Continue work on web UI and/or smartphone app
+* Finish work on O-Z solver.
+* Documentation maintenance and development
 * Usual bug fixes and other minor improvements as time and interest permit
 
 **Late 2025 - Mid 2026 - Release 6.0**
 
-Subject to the availability of sufficient resources, release 6.0 will allow running compute intensive portions of SasView computation on a cluster back end with a transparent access from the user GUI.  It will also allow deployment as a webservice with a web based front end which will have limited functionality in this first instance.  ASAXS and other SAXS specific workflows will be included. Work on a smartphone app interface to the webservice will continue but lilkely will not be ready for this release. The use of wizards and intelligent user guidance will be expanded and new workflows/interfaces may be added as appropriate. Include documentation tasks prioritized in previous round.
+Subject to the availability of sufficient resources, release 6.0 will allow running compute intensive portions of SasView computation on a cluster back end with a transparent access from the desktop GUI. It will also allow deployment as a webservice with a web based front end which will have limited functionality in this first instance. Integration of SasView into a realtime analysis workflow on actual beamlines should now be possible. The use of wizards and intelligent user guidance will be expanded and new workflows/interfaces may be added as appropriate. Meanwhile, tutorial and community development efforts will continue and documentation tasks as envisoned in the documentation strategy exercices will be worked on.
 
 Task Summary (Subject to the availability of sufficient resources):
 
-* UI refactoring complete
 * Deploy computational code on clusters
-* GUI includes intelligent launcher/scheduler that makes the use of a cluster back end transparent to the user
+* Complete headless operation and realtime analysis workflows.
 * Deploy Web application
+* Continue work on smartphone app
+* Create at least one more tutorial as appropriate
+* Continue work to expand the size and diversity of the contributor commmunity
+* Create at least one more video tutorials.
+* Start work on adding ASAXS support 
 * Expand use of wizards and intelligent user guidance
 * Add new workflow interfaces as appropriate
-* Continue work on smartphone UI
-* Documentation tasks as determined during previous code camp or fortnightly meetings
+* Documentation maintenance and development
 * Usual bug fixes and other minor improvements as time and interest permit
 
 **Late 2026 - Mid 2027 - Release 6.x**
 
-Subject to the availability of sufficient resources, release 6.x will again try place an emphasis on addressing requests for smaller feature enhancements and improvements to the interface and workflow.  It will also continue to expand on intelligent guidance and include more functionality on web app and see the deployment of a smartphone app. Include documentation tasks prioritized in previous round.
+Subject to the availability of sufficient resources, release 6.x will try place an emphasis on addressing requests for smaller feature enhancements and improvements to the interface and workflow.  It will also continue to expand on intelligent guidance and include more functionality on web app and see the deployment of a smartphone app.ASAXS and other SAXS specific workflows will be included. Work on a smartphone app interface to the webservice will continue but lilkely will not be ready for this release. Meanwhile, tutorial and community development efforts will continue and documentation tasks as envisoned in the documentation strategy exercices will be worked on.
 
 * Continue to expand use of wizards and intelligent user guidance
-* Deploy smartphone app
+* Start work on adding ASAXS support 
+* continue work on smartphone app
+* Create at least one more tutorial as appropriate
+* Continue work to expand the size and diversity of the contributor commmunity
+* Create at least one more video tutorials.
+* Finish work on adding ASAXS support 
 * Expanded functionality of web app
-* Documentation tasks as determined during previous code camp or fortnightly meetings
+* Add new workflow interfaces as appropriate
+* Documentation maintenance and development
 * Usual bug fixes and other minor improvements as time and interest permit
 
 
