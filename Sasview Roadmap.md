@@ -59,37 +59,37 @@ Most notable here was the move from Python2/wxPython in SasView version 4.x to P
 
 **Late 2021 to mid 2022 - Release 5.0.5**
 
-Due to the pandemic the Code Camp scheduled for March 2020 in Caltech was canceled and did not resume for another 2+ years.  An attempt was made to pivot to short virtual hackathons with some success but the progress was clearly impacted, nonetheless, release 5.0.5 provided some new features and resolved a number of issues. In particular, the generic scattering calculator got its first much needed overhaul, this one focused on the needs of the magnetic scattering community. Work will begin on refactoring the simultaneous/constrained fitting workflow interface.
+Due to the pandemic the Code Camp scheduled for March 2020 in Caltech was canceled and did not resume for another 2+ years.  An attempt was made to pivot to short virtual hackathons with some success but the progress was clearly impacted. Nonetheless, release 5.0.5 provided some new features and resolved a number of issues. In particular, the generic scattering calculator got its first much needed overhaul, this one focused on the needs of the magnetic scattering community. Work will now begin on refactoring the simultaneous/constrained fitting workflow interface.
 
 Task Summary:
 
-* A sasmodels interface for custom re-parameterization of models is provided. 
-* Continued work on refactoring constrained/simultaneous fits.
-* The generic scattering calculator was significcantly overhauled particularly for use with magnetic materials
-* Started developing ideas for community interactions and hostes several training workshops (some virtual)
+* A sasmodels interface for custom re-parameterization of models is provided 
+* Continued work on refactoring constrained/simultaneous fits
+* The generic scattering calculator was significantly overhauled particularly for use with magnetic materials
+* Started developing ideas for community interactions and hosted several training workshops (some virtual)
 * Work on incorporating polyhedral form factors continued
 * Work on graphical represtation of models continued
-* An intial feature to aid SAXS/SANS co-refinement was added.
 * Work on defining and incorporating generic resolution functions was started
 * Work to update tutorials to support 5.x
-* Work on SasView paper continued
-* AS usual, a large number of bug fixes and other minor improvements
+* Work on the SasView paper continued
+* As usual, a large number of bug fixes and other minor improvements
 
 SasView 5.0.5 was released on June 3, 2022.
 * <https://github.com/SasView/sasview/releases/tag/v5.0.5>
 
 **Late 2022 - Mid 2023 - Release 5.1**
 
-The primary goal, and therefore focus of work, for release 5.1 is to achieve full feature parity with the 4.x versions. While 5.x has many new features and advances there remain a number of outstanding issues taged with the "For Feature Parity" label in github. Subject to the availability of sufficient resources, release 5.1 will also add new fitting functionality such as allowing for the reading in an array representing either P(Q) or S(Q) for P\*S, fitting oriented model to 1D cut etc.; begin work on adding PRISM[^9] (polymer reference interaction site model), McSAS and FFSAS (providing users better approaches for obtaining particle size distributions) fitting modules; add new scattering calculators to the generic scattering calculator and add improved functionatly to the P(R) perspective.  Work will continue on an advanced data fitting with SasView tutorial. On the documentation and community development fronts, work will continue to expand and diversify the contributor community, several new tutorials, both written and video, will be started, and the SasView paper will be submitted.
+The primary goal, and therefore focus of work, for release 5.1 is to achieve full feature parity with the 4.x versions. While 5.x has many new features and advances there remain a number of outstanding issues taged with the "For Feature Parity" label in github. Subject to the availability of sufficient resources, release 5.1 will also add new fitting functionality such as allowing for the reading in of an array representing either P(Q) or S(Q) for P\*S, fitting oriented models to 1D cuts, etc.; begin work on adding PRISM[^9] (polymer reference interaction site model), McSAS and FFSAS (providing users better approaches for obtaining particle size distributions) fitting modules; add new scattering calculators to the generic scattering calculator and add improved functionality to the P(R) perspective.  Work will continue on an advanced data fitting with SasView tutorial. On the documentation and community development fronts, work will continue to expand and diversify the contributor community, several new tutorials, both written and video, will be started, and the SasView paper will be submitted.
 
 Task Summary (Subject to the availability of sufficient resources):
 
-* Begin model fitting refactoring work to allow reading in an array representing either PQ or SQ for P*/S fits, fitting oriented model to 1D cut etc.
-* Implement a first pass at providing (some rudimentary) tools for SAXS/SANS co-refinement (with an eye to better understanding the complicated issues involved in co-refinement of data from different techniques) 
+* Finish overhaul of the Corfunc module
+* Begin model fitting refactoring work to allow reading in an array representing either P(Q) or S(Q) for P*/S fits, fitting oriented models to 1D cuts, etc.
+* Finish work on (some rudimentary) tools for SAXS/SANS co-refinement 
 * Finish initial simultaneous/constrained workflow upgrades 
 * Begin work on advanced model fitting tutorial
 * Begin work on writing custom models tutorial
-* Create first in series of video tutorials.
+* Create first in series of video tutorials
 * Begin work to integrate McSAS and FFSAS
 * Begin work on inclusion of PRISM[^9] functionality
 * Begin work on separating out a generic dataloader package
@@ -97,42 +97,40 @@ Task Summary (Subject to the availability of sufficient resources):
 * Continue work to expand the size and diversity of the contributor commmunity
 * Begin adding other algorithms to the generic scattering calculator such as SPONGE, McSim, Golden Vector approach etc.
 * Add tabbed and batch functionality to P(R) inversion to match fitting perspective functionality
-* Continue discussions on how to address mutlimodal fitting.
+* Continue discussions on how to address mutlimodal fitting
 * Continue work on developing more advanced resolution calculations in co-operation with NXcanSAS group (e.g. generic resolution functions etc)
 * Usual bug fixes and other minor improvements as time and interest permit
 
 **Late 2023 - Mid 2024  - Release 5.2**
 
-Subject to the availability of sufficient resources, release 5.2 will focus on adding major new functionality along with the usual bug fixes and minor improviements. In particular, The McSAS, FFSAS and PRISM modules should be incorporated into this release along with some more advanced resolution calculation options. New real space to Fourier space calculators may continue to be added to the general scattering calculator and some new tools for multimodal analysis may begin to show up in this release as well.  Use cases and design development will commence on a web interface (possibly including smartphone app capabilities), along with work on some infrastructure projects such as separating out the GUI package from the calculation package and providing more robust parallel processing support. Meanwhile, tutorial and community development efforts will continue while an effort will be made to develop sustainable plans for documentation maintenance and development writ large. 
+Subject to the availability of sufficient resources, release 5.2 will focus on adding major new functionality along with the usual bug fixes and minor improvements. In particular, the McSAS, FFSAS and PRISM modules should be incorporated into this release along with some more advanced resolution calculation options. New real-space to Fourier-space calculators may continue to be added to the general scattering calculator and some new tools for multimodal analysis may begin to show up in this release as well.  Use cases and design development will commence on a web interface (possibly including smartphone app capabilities), along with work on some infrastructure projects such as separating out the GUI package from the calculation package and providing more robust parallel processing support. Meanwhile, tutorial and community development efforts will continue while an effort will be made to develop sustainable plans for documentation maintenance and development writ large. 
 
 Task Summary (Subject to the availability of sufficient resources):
 
-* Finish model fitting refactoring work to allow reading in an array representing either PQ or SQ for P*/S fits, fitting oriented model to 1D cut etc.
+* Finish model fitting refactoring work to allow reading in an array representing either P(Q) or S(Q) for P*/S fits, fitting oriented models to 1D cuts, etc.
 * Finish work to integrate McSAS and FFSAS
 * Finish work on inclusion of PRISM[^9] functionality
 * Finish work on separating out a generic dataloader package
 * Begin work on separating out sascalc package
 * Begin work to refactor/improve P(R) inversion by adding full automation of parameter choices, 2D as well as 1D P(R), and/or other algorithms
-* begin work on architecture manual
+* Begin work on architecture manual
 * Finish work on advanced model fitting tutorial
 * Finish work on writing custom models tutorial
 * Create at least one more tutorial as appropriate
 * Continue work to expand the size and diversity of the contributor commmunity
 * Create more video tutorials.
-* Begin use case and design on Web interface (with possible smartphone app feature) * initial version can have minimal features but would be useful for demos?
+* Begin use case and design on Web interface (with possible smartphone app feature); _initial version can have minimal features but would be useful for demos?_
 * Expand parallel processing support for multi-GPU, multi-CPU and CPU/GPU computation
 * Continue adding other algorithms to the generic scattering calculator such as SPONGE, McSim, Golden Vector approach etc.
-* Start implementing further tools/algorithms to aid mutlimodal fitting as appropriate.
+* Start implementing further tools/algorithms to aid multimodal fitting as appropriate
 * Complete implementation of first advanced resolution calculations subject to sufficient community agreement
 * Begin work on generic O-Z solver
 * Develop documentation maintenance and development strategy
 * Usual bug fixes and other minor improvements as time and interest permit
 
-
 **Late 2024 - Mid 2025 - Release 5.3 / Release 6.0 alpha/beta**
 
-Subject to the availability of sufficient resources, release 5.3 will focus on wrapping up some new features and preparing for more distributed operation (web app, allowing computational code to run on a cluster with an intelligent launcher/scheduler for the GUI frontend which will make the use of the a cluster backend transparent to the user, data pipelining etc), as well as starting work on providing intelligent feedback.  However, while the web UI and remote job operation work will continue, is not expected to be ready for this release. Meanwhile, tutorial and community development efforts will continue and documentation tasks as envisoned in the documentation strategy exercices will be worked on.
-
+Subject to the availability of sufficient resources, release 5.3 will focus on wrapping up some new features and preparing for more distributed operation (web app, allowing computational code to run on a cluster with an intelligent launcher/scheduler for the GUI frontend which will make the use of the a cluster backend transparent to the user, data pipelining etc), as well as starting work on providing intelligent feedback.  However, while the web UI and remote job operation work will continue, is not expected to be ready for this release. Meanwhile, tutorial and community development efforts will continue and documentation tasks as envisioned in the documentation strategy exercices will be worked on.
 
 Task Summary (Subject to the availability of sufficient resources):
 
@@ -143,11 +141,11 @@ Task Summary (Subject to the availability of sufficient resources):
 * Finish work on architecture manual
 * Create at least one more tutorial as appropriate
 * Continue work to expand the size and diversity of the contributor commmunity
-* Create at least one more video tutorials.
-* Continue implementing further tools/algorithms to aid mutlimodal fitting as appropriate.
+* Create at least one more video tutorials
+* Continue implementing further tools/algorithms to aid mutlimodal fitting as appropriate
 * Start including intelligent limits/help (possibly include switch between enforcement and warning only) and explore the use of wizards and AI
 * Continue work on web UI and/or smartphone app
-* Finish work on O-Z solver.
+* Finish work on O-Z solver
 * Documentation maintenance and development
 * Usual bug fixes and other minor improvements as time and interest permit
 
@@ -163,7 +161,7 @@ Task Summary (Subject to the availability of sufficient resources):
 * Continue work on smartphone app
 * Create at least one more tutorial as appropriate
 * Continue work to expand the size and diversity of the contributor commmunity
-* Create at least one more video tutorials.
+* Create at least one more video tutorials
 * Start work on adding ASAXS support 
 * Expand use of wizards and intelligent user guidance
 * Add new workflow interfaces as appropriate
@@ -179,7 +177,7 @@ Subject to the availability of sufficient resources, release 6.x will try place 
 * continue work on smartphone app
 * Create at least one more tutorial as appropriate
 * Continue work to expand the size and diversity of the contributor commmunity
-* Create at least one more video tutorials.
+* Create at least one more video tutorials
 * Finish work on adding ASAXS support 
 * Expanded functionality of web app
 * Add new workflow interfaces as appropriate
@@ -190,7 +188,7 @@ Subject to the availability of sufficient resources, release 6.x will try place 
 
 ## Revision History ##
 
-* 2015-11-24	: First release
-* 2016-10-11	: Updated after Code Camp V discussions
+* 2015-11-24 : First release
+* 2016-10-11 : Updated after Code Camp V discussions
 * 2018-09-07 : Updated after Code Camp VI & VII discussions
 * 2022-02-18 : Updated after magnetic SANS discussions
