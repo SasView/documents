@@ -6,9 +6,9 @@ Over the past decade several trends have contributed to exacerbate the analysis 
 
 To enable the production and maintenance of software that meets users expectations, a greater level of resources needs to be applied to the problem. This has been recognised in the neutron scattering community through projects such as DANSE [^2], Mantid [^3], CCPSAS[^4] and projects within the European Union Horizon 2020 programme such as SINE2020[^5]. While each facility or scientist may not be able to commit the necessary resources, pooling of expertise between facilities and with the user community into a single project can amplify the effort and provide gains in quality, functionality, longevity and supportability with obvious benefits to both the facilities and the users.
 
-The aim of the SasView project is to provide open source, *collaboratively developed software for the analysis of small angle scattering data*
+The aim of the SasView project is to provide open source, *community and collaboratively developed software for the analysis of small angle scattering data*
 
-The collaborative development model is designed to encourage and enable contribution from a range of experts in small angle scattering, computer science and software development. Users of the software are encouraged to participate through bug reports, submitting code and by integrating their own scattering models.
+The community collaborative development model is designed to encourage and enable contribution from a range of experts in small angle scattering, computer science and software development. Users of the software are encouraged to participate through bug reports, submitting code and by integrating their own scattering models as well as by joining the team which does not require any specific commitment. see <https://www.sasview.org/contribute/> about how to get involved with the SasView community.
 
 This is a regularly updated document, reviewed at each Code Camp. Document history is maintained and previous iterations can be found in the SasView GitHub repository[^6]
 
