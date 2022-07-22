@@ -42,7 +42,22 @@ As of 2015, few if any of the developers have SasView as a major component of th
 
 Every release should include bug fixes and new models as requests come in.  These are assumed with each release and not included specifically below.  Likewise general robustness and ease of use issues will be addressed in each release cycle.
 
-**Late 2021 to mid 2022 Release 5.0.5**
+**Late 2018 to late 2021 - SasView 5**
+
+Due to an oversight the last update to the Roadmap failed to record a number of SasView releases which we correct here:
+
+    * Oct 2018: <https://github.com/SasView/sasview/releases/tag/v4.2.0>  
+    * Feb 2019: <https://github.com/SasView/sasview/releases/tag/v4.2.1>
+    * May 2019: <https://github.com/SasView/sasview/releases/tag/v4.2.2>
+    * May 2019: <https://github.com/SasView/sasview/releases/tag/v5.0.0>
+    * Feb 2020: <https://github.com/SasView/sasview/releases/tag/v5.0.1>
+    * Apr 2020: <https://github.com/SasView/sasview/releases/tag/v5.0.2>
+    * Jul 2020: <https://github.com/SasView/sasview/releases/tag/v5.0.3>
+    * Apr 2021: <https://github.com/SasView/sasview/releases/tag/v5.0.4>
+
+Most notable here was the move from Python2/wxPython in SasView version 4.x to Python3/pyQt in SasView version 5.x.
+
+**Late 2021 to mid 2022 - Release 5.0.5**
 
 Due to the pandemic the 2020 code camp scheduled for March 20 in Caltech was canceled and did not resume for another 2 + years.  An attempt was made to pivot to short virtual hackathons with some success but the progress was clearly impacted, nonetheless, release 5.0.5 provided was released with some new feature and a number of issues fixed. In particular the generic scattering calculator got its first much needed overhaul, this one focused on the needs of the magnetic scattering community. Also a first pass at providing at least some very rudimentary tools for SAXS/SANS co-refinement was added with an eye to better understanding the complicated issues involved in co-refinement of data from different techniques. Work will begin on refactoring the simultaneous/constrained fitting workflow interface.
 
