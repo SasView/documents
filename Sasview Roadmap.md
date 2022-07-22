@@ -8,7 +8,7 @@ To enable the production and maintenance of software that meets users expectatio
 
 The aim of the SasView project is to provide open source, *community and collaboratively developed software for the analysis of small angle scattering data*
 
-The community collaborative development model is designed to encourage and enable contribution from a range of experts in small angle scattering, computer science and software development. Users of the software are encouraged to participate through bug reports, submitting code and by integrating their own scattering models as well as by joining the team which does not require any specific commitment. see <https://www.sasview.org/contribute/> about how to get involved with the SasView community.
+The community collaborative development model is designed to encourage and enable contribution from a range of experts in small angle scattering, computer science and software development. Users of the software are encouraged to participate through bug reports, submitting code and by integrating their own scattering models as well as by joining the team which does not require any specific commitment. See the SasView website at <https://www.sasview.org/contribute/> about how to get involved with the SasView community.
 
 This is a regularly updated document, reviewed at each Code Camp. Document history is maintained and previous iterations can be found in the SasView GitHub repository[^6]
 
@@ -32,7 +32,7 @@ This is a regularly updated document, reviewed at each Code Camp. Document histo
 
 ## Development Model
 
-The SasView project is co-ordinated by a small management team who are also members of the broader development team. The development team currently consists of scientists and software engineers from scattering facilities around the world. Progress is monitored and project direction discussed at bi-weekly video conferences. The work is divided into various work packages that bundle together related tasks and issues. The project aims for a major release each year, with minor bug fix releases as required in between.
+The SasView project is co-ordinated by a small management team who are also members of the broader development team. The active development team currently consists mostly of scientists and software engineers from scattering facilities around the world. Progress is monitored and project direction discussed at bi-weekly video conferences. The project aims for a major release each year, with minor bug fix releases as required in between.
 
 The source code for SasView is hosted on GitHub, allowing anyone to fork the code base, add functionality or fix bugs, and easily request that the code be merged into the project. The use of unit tests and code quality metrics is employed to help manage the contribution of code from a varied and dispersed developer base.
 
