@@ -112,9 +112,12 @@ Task Summary:
 
 - Move focus of all GUI efforts to the new Qt GUI
 - Parallel development and release tracks
+- Complete beta approximation work
 - New, more flexible interaction volumes/radii
 - Community meeting at SAS 2018
+- Complete SasView paper
 - Consolidate and extend training material - both written tutorials and hands-on training material.
+- Update model marketplace
 - Create plan for developing community interactions.
 - Fixes to custom model editor to support polydispersity
 - Incorporation of models from SASFit[^7] and Scatter[^8] (Förster - crystalline materials models primarily)
@@ -122,7 +125,7 @@ Task Summary:
 - Release 5.0 alpha (late 2018), 5.0 beta (early 2019), 5.0 (mid 2019) 
 - Release 4.2
 
-**Late 2019 to mid 2020 (from code camp IX - ILL) - Release 4.3, Release 5.1**
+**Late 2019 to mid 2020 (from code camp VIII - ESS) - Release 4.3, Release 5.1**
 
 Subject to the availability of sufficient resources, release 5.1. Work will start on refactoring fitting to allow, for example custom re-parameterization of models (e.g. replace SLD with fraction of solvent in layer), using an input array for P or S in a P*S model, fitting oriented model to 1D cut etc. Work will begin on refactoring the simultaneous/constrained fitting workflow interface and on custom workflows identified as highest priority and having a well developed design. User documentation/tutorials will be reviewed, an advanced "how to fit my data" tutorial will be started, and an architecture manual begun. McSAS will be integrated into SasView, giving users an  approach to obtaining particle size distributions.
 Work on providing the generic O-Z solver tool that is present in SASFit will begin. Work on support for multi-GPU and multi-CPU computation, which may involve refactoring away from OpenCL as support for this standard is waning. Incorporation of the PRISM[^9] (polymer reference interaction site model) code into SasView.
@@ -131,37 +134,31 @@ Task Summary (Subject to the availability of sufficient resources):
 
 * Begin model fitting refactoring work to allow custom re-parameterization of models, allow reading in an array representing either PQ or SQ for P*S fits, fitting oriented model to 1D cuts including revisiting orientation definitions etc.
 * Complete architecture manual
-* Complete SasView paper
-* Complete beta approximation work
-* Update model marketplace
 * Begin work on refactoring constrained/simultaneous fits.
 * Begin work on adding custom workflows identified as highest priority 
 * Work to update tutorials to support 5.x
 * Begin work on advanced model fitting tutorial
 * Usual bug fixes and other minor improvements as time and interest permit
-* Integration of McSAS
-* Begin work on generic O-Z solver
-* Inclusion of PRISM[^9] functionality
-* Improvements to custom model editors including features from compare.py
-* Support for multi-GPU, multi-CPU and CPU/GPU computation
-* Headless operation/realtime analysis workflows started
-* sascalc sepration started 
-**Late 2020 - Mid 2021 (from Code Camp X - Caltech)- Release 5.2**
+*  Integration of McSAS
+*  Begin work on generic O-Z solver
+*  Inclusion of PRISM[^9] functionality
+*  Begin work to refactor/improve generic scattering calculator
+*  Improvements to custom model editors including features from compare.py
+*  Support for multi-GPU, multi-CPU and CPU/GPU computation
+
+**Late 2020 - Mid 2021 (from Code Camp IX)- Release 5.2**
 
 Subject to the availability of sufficient resources, release 5.2 will provide new fitting functionality such as custom re-parameterization of models, allow reading in an array representing either PQ or SQ for P*S, fitting oriented model to 1D cut etc. The refactored workflow interfaces for constrained/simultaneous fits and batch fitting and plotting module will be deployed in this release.  Work will continue on an advanced data fitting with SasView tutorial.  Work on new workflow/interfaces for contrast variation for example and new magnetic scattering workflows will begin.  These workflows are not expected to be in the release however. Generic O-Z solver will be available in this release.
 
 Task Summary (Subject to the availability of sufficient resources):
-* Begin work to refactor/improve generic scattering calculator
-* Begin work to refactor/improve P(r) perspective
+
 * Finish fitting refactoring work to allow custom re-parameterization of models, allow reading in an array representing either PQ or SQ for P*S fits, fitting oriented model to 1D cut etc.
-* Refactor plotting interface for 5.x
 * Refactor simultaneous/constrained workflow interface
 * Continue development of advanced fitting tutorial
 * Start new workflow/interfaces
 * Usual bug fixes and other minor improvements as time and interest permit
 * Finish work on O-Z solver.
-* Headless operation/realtime analysis workflows completed
-* Complete work on sascalc separation
+* Complete work on refactor/improve generic scattering calculator.
 
 **Late 2021 - Mid 2022 (from Code Camp X)  - Release 5.3**
 
@@ -170,14 +167,13 @@ Subject to the availability of sufficient resources, release 5.3 will again try 
 Task Summary (Subject to the availability of sufficient resources):
 
 * Finish advanced model fitting tutorial
-* Complete work on refactor/improve generic scattering calculator
-* Complete work on refactor/improve P(r) perspective
 * Include more workflow/interfaces
 * Begin use case and design on Web interface (with possible smartphone app feature) * initial version can have minimal features but would be useful for demos?
 * Finish outstanding documentation projects
 * Prioritize new documentation tasks
 * Usual bug fixes and other minor improvements as time and interest permit
-* Community meeting at SAS 2021
+* Headless operation/realtime analysis workflows started
+
 
 **Late 2022 - Mid 2023 (from code camp XI ) - Release 5.4 / Release 6.0 alpha/beta**
 
