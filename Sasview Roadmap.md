@@ -32,7 +32,7 @@ This is a regularly updated document, reviewed at each Code Camp. Document histo
 
 ## Development Model
 
-The SasView project is co-ordinated by a small management team who are also members of the broader development team. The active development team currently consists mostly of scientists and software engineers from scattering facilities around the world. Progress is monitored and project direction discussed at bi-weekly video conferences. The project aims for a major release each year, with minor bug fix releases as required in between.
+The SasView project is co-ordinated by a small management team who are also members of the broader development team. The active development team currently consists mostly of scientists and software engineers from scattering facilities around the world. Progress is monitored and project direction discussed at fortnightly video conferences. The project aims for a major release each year, with minor bug fix releases as required in between.
 
 The source code for SasView is hosted on GitHub, allowing anyone to fork the code base, add functionality or fix bugs, and easily request that the code be merged into the project. The use of unit tests and code quality metrics is employed to help manage the contribution of code from a varied and dispersed developer base.
 
