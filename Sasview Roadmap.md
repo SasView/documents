@@ -59,7 +59,7 @@ Most notable here was the move from Python2/wxPython in SasView version 4.x to P
 
 **Late 2021 to mid 2022 - Release 5.0.5**
 
-Due to the pandemic the Code Camp scheduled for March 2020 in Caltech was canceled and did not resume for another 2+ years.  An attempt was made to pivot to short virtual hackathons with some success but the progress was clearly impacted. Nonetheless, release 5.0.5 provided some new features and resolved a number of issues. In particular, the generic scattering calculator got its first much needed overhaul, this one focused on the needs of the magnetic scattering community. Work will now begin on refactoring the simultaneous/constrained fitting workflow interface.
+Due to the Covid pandemic the Code Camp scheduled for March 2020 in Caltech was cancelled and another was not scheduled for another 2+ years.  With the developer community isolated, an attempt was made to pivot to short virtual Hackathons with some success, but  progress was clearly impacted. Nonetheless, release 5.0.5 provided some new features and resolved a number of issues. In particular, the generic scattering calculator got its first much needed overhaul, this one focused on the needs of the magnetic scattering community. Work will now begin on refactoring the simultaneous/constrained fitting workflow interface.
 
 Task Summary:
 
@@ -70,16 +70,16 @@ Task Summary:
 * Work on incorporating polyhedral form factors continued
 * Work on graphical represtation of models continued
 * Work on defining and incorporating generic resolution functions was started
-* Work to update tutorials to support 5.x
+* Work to update tutorials to support 5.x continued
 * Work on the SasView paper continued
-* As usual, a large number of bug fixes and other minor improvements
+* As usual, a large number of bug fixes and other minor improvements were included
 
 SasView 5.0.5 was released on June 3, 2022.
 * <https://github.com/SasView/sasview/releases/tag/v5.0.5>
 
 **Late 2022 - Mid 2023 - Release 5.1**
 
-The primary goal, and therefore focus of work, for release 5.1 is to achieve full feature parity with the 4.x versions. While 5.x has many new features and advances there remain a number of outstanding issues taged with the "For Feature Parity" label in github. Subject to the availability of sufficient resources, release 5.1 will also add new fitting functionality such as allowing for the reading in of an array representing either P(Q) or S(Q) for P\*S, fitting oriented models to 1D cuts, etc.; begin work on adding PRISM[^9] (polymer reference interaction site model), McSAS and FFSAS (providing users better approaches for obtaining particle size distributions) fitting modules; add new scattering calculators to the generic scattering calculator and add improved functionality to the P(R) perspective.  Work will continue on an advanced data fitting with SasView tutorial. On the documentation and community development fronts, work will continue to expand and diversify the contributor community, several new tutorials, both written and video, will be started, and the SasView paper will be submitted.
+The primary goal, and therefore focus of work, for release 5.1 is to achieve full feature parity with the 4.x versions. While 5.x has many new features and advances there remain a number of outstanding issues tagged with the "For Feature Parity" label in Github. Subject to the availability of sufficient resources, release 5.1 will also add new fitting functionality such as allowing for the reading in of an array representing either P(Q) or S(Q) for P\*S and fitting oriented models to 1D slices, etc.; begin work on adding PRISM[^9] (polymer reference interaction site model), McSAS and FFSAS (providing users with better approaches for obtaining particle size distributions) fitting modules; add new scattering calculators to the generic scattering calculator and add improved functionality to the P(R) perspective.  Work will continue on an advanced data fitting with SasView tutorial. On the documentation and community development fronts, work will continue to expand and diversify the contributor community, several new tutorials, both written and video, will be started, and the SasView paper will be submitted.
 
 Task Summary (Subject to the availability of sufficient resources):
 
@@ -99,7 +99,7 @@ Task Summary (Subject to the availability of sufficient resources):
 * Add tabbed and batch functionality to P(R) inversion to match fitting perspective functionality
 * Continue discussions on how to address mutlimodal fitting
 * Continue work on developing more advanced resolution calculations in co-operation with NXcanSAS group (e.g. generic resolution functions etc)
-* Usual bug fixes and other minor improvements as time and interest permit
+* Add the usual bug fixes and other minor improvements as time and interest permit
 
 **Late 2023 - Mid 2024  - Release 5.2**
 
@@ -126,7 +126,7 @@ Task Summary (Subject to the availability of sufficient resources):
 * Complete implementation of first advanced resolution calculations subject to sufficient community agreement
 * Begin work on generic O-Z solver
 * Develop documentation maintenance and development strategy
-* Usual bug fixes and other minor improvements as time and interest permit
+* Add the usual bug fixes and other minor improvements as time and interest permit
 
 **Late 2024 - Mid 2025 - Release 5.3 / Release 6.0 alpha/beta**
 
@@ -147,7 +147,7 @@ Task Summary (Subject to the availability of sufficient resources):
 * Continue work on web UI and/or smartphone app
 * Finish work on O-Z solver
 * Documentation maintenance and development
-* Usual bug fixes and other minor improvements as time and interest permit
+* Add the usual bug fixes and other minor improvements as time and interest permit
 
 **Late 2025 - Mid 2026 - Release 6.0**
 
@@ -166,7 +166,7 @@ Task Summary (Subject to the availability of sufficient resources):
 * Expand use of wizards and intelligent user guidance
 * Add new workflow interfaces as appropriate
 * Documentation maintenance and development
-* Usual bug fixes and other minor improvements as time and interest permit
+* Add the usual bug fixes and other minor improvements as time and interest permit
 
 **Late 2026 - Mid 2027 - Release 6.x**
 
@@ -182,7 +182,7 @@ Subject to the availability of sufficient resources, release 6.x will try place 
 * Expanded functionality of web app
 * Add new workflow interfaces as appropriate
 * Documentation maintenance and development
-* Usual bug fixes and other minor improvements as time and interest permit
+* Add the usual bug fixes and other minor improvements as time and interest permit
 
 ## Revision History ##
 
