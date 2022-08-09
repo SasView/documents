@@ -162,7 +162,6 @@ Task Summary (Subject to the availability of sufficient resources):
 * Create at least one more tutorial as appropriate
 * Continue work to expand the size and diversity of the contributor commmunity
 * Create at least one more video tutorials
-* Start work on adding ASAXS support 
 * Expand use of wizards and intelligent user guidance
 * Add new workflow interfaces as appropriate
 * Documentation maintenance and development
@@ -170,15 +169,13 @@ Task Summary (Subject to the availability of sufficient resources):
 
 **Late 2026 - Mid 2027 - Release 6.x**
 
-Subject to the availability of sufficient resources, release 6.x will try place an emphasis on addressing requests for smaller feature enhancements and improvements to the interface and workflow.  It will also continue to expand on intelligent guidance and include more functionality on web app and see the deployment of a smartphone app. ASAXS and other SAXS specific workflows will be included. Work on a smartphone app interface to the webservice will continue but likely will not be ready for this release. Meanwhile, tutorial and community development efforts will continue and documentation tasks as envisoned in the documentation strategy exercices will be worked on.
+Subject to the availability of sufficient resources, release 6.x will try place an emphasis on addressing requests for smaller feature enhancements and improvements to the interface and workflow.  It will also continue to expand on intelligent guidance and include more functionality on web app and see the deployment of a smartphone app. SAXS specific workflows will be included. Work on a smartphone app interface to the webservice will continue but likely will not be ready for this release. Meanwhile, tutorial and community development efforts will continue and documentation tasks as envisoned in the documentation strategy exercices will be worked on.
 
 * Continue to expand use of wizards and intelligent user guidance
-* Start work on adding ASAXS support 
 * Continue work on smartphone app
 * Create at least one more tutorial as appropriate
 * Continue work to expand the size and diversity of the contributor commmunity
 * Create at least one more video tutorials
-* Finish work on adding ASAXS support 
 * Expanded functionality of web app
 * Add new workflow interfaces as appropriate
 * Documentation maintenance and development
