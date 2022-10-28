@@ -98,20 +98,20 @@ Task Summary (Subject to the availability of sufficient resources):
 * Continue work on separating out a generic dataloader package
 * Complete SasView paper
 * Continue work to expand the size and diversity of the contributor commmunity
-* Begin adding other algorithms to the generic scattering calculator such as SPONGE, McSim, Golden Vector approach etc.
+* Begin adding other algorithms to the generic scattering calculator such as FFT-based, SPONGE, McSim, Golden Vector approach etc.
+* Begin work on including the beta approximation calculation into generic scattering calculator
 * Add tabbed and batch functionality to P(R) inversion to match fitting perspective functionality
 * Continue discussions on how to address mutlimodal fitting
 * Continue work on developing more advanced resolution calculations in co-operation with NXcanSAS group (e.g. generic resolution functions etc)
-* Add the usual bug fixes and other minor improvements as time and interest permit
 * Refactor the way plotting is tied to data and fitting
 * Refactor reporting and exporting of perspective data 
 * Refactoring of project/analysis Saving and Loading
 * Begin work improving magnetic SANS workflows
 * Begin adding support for handling multiple scattering calculation
 * Reimplement the orientation viewer
-* Begin work on including the beta approximation calculation into generic scattering calculator
-* Begin work on external database integration for final results deposition
+* Begin work on external databases integration for final results deposition
 * Complete work on simplifying dependencies/requirements
+* Add the usual bug fixes and other minor improvements as time and interest permit
 
 **Late 2023 - Mid 2024  - Release 5.2**
 
@@ -128,12 +128,13 @@ Task Summary (Subject to the availability of sufficient resources):
 * Begin work on architecture manual
 * Finish work on advanced model fitting tutorial
 * Finish work on writing custom models tutorial
+* Begin work on writing scripting tutorial
 * Create at least one more tutorial as appropriate
 * Continue work to expand the size and diversity of the contributor commmunity
 * Create more video tutorials.
 * Begin use case and design on Web interface (with possible smartphone app feature); _initial version can have minimal features but would be useful for demos?_
 * Expand parallel processing support for multi-GPU, multi-CPU and CPU/GPU computation
-* Continue adding other algorithms to the generic scattering calculator such as SPONGE, McSim, Golden Vector approach etc.
+* Continue adding other algorithms to the generic scattering calculator such as FFT-based, SPONGE, McSim, Golden Vector approach etc.
 * Start implementing further tools/algorithms (e.g. different cost functions) to aid multimodal fitting as appropriate
 * Complete implementation of first advanced resolution calculations subject to sufficient community agreement
 * Begin work on generic O-Z solver
@@ -144,8 +145,7 @@ Task Summary (Subject to the availability of sufficient resources):
 * P*S computation enhancements (adding locally monodisperse approx.; fix volume fraction issue, etc.)
 * Finish work on simplifying dependencies/requirements
 * Begin work on full history stack (Redo/Undo functionality)
-* Begin work on tutorials (written and video) for writing models
-* Finish work on including beta approximation calculation into generic scattering calculator
+* Finish work on incorporating beta approximation calculation into generic scattering calculator
 
 
 **Late 2024 - Mid 2025 - Release 5.3 / Release 6.0 alpha/beta**
@@ -167,10 +167,10 @@ Task Summary (Subject to the availability of sufficient resources):
 * Continue work on web UI and/or smartphone app
 * Finish work on O-Z solver
 * Documentation maintenance and development
-* Add the usual bug fixes and other minor improvements as time and interest permit
 * Add proper Qz support to SasView analysis
 * Finish work on full history stack (Redo/Undo functionality)
 * Finish implementation on tools/algorithms for multimodal fitting
+* Add the usual bug fixes and other minor improvements as time and interest permit
 
 **Late 2025 - Mid 2026 - Release 6.0**
 
