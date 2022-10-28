@@ -72,6 +72,8 @@ Task Summary:
 * Work on defining and incorporating generic resolution functions was started
 * Work to update tutorials to support 5.x continued
 * Work on the SasView paper continued
+* Model marketplace was upgraded
+* Begin work on simplifying dependencies/requirements
 * As usual, a large number of bug fixes and other minor improvements were included
 
 SasView 5.0.5 was released on June 3, 2022.
@@ -90,9 +92,10 @@ Task Summary (Subject to the availability of sufficient resources):
 * Begin work on advanced model fitting tutorial
 * Begin work on writing custom models tutorial
 * Create first in series of video tutorials
+* Begin work on tutorials (written and video) for scripting
 * Begin work to integrate McSAS and FFSAS
 * Begin work on inclusion of PRISM[^9] functionality
-* Begin work on separating out a generic dataloader package
+* Continue work on separating out a generic dataloader package
 * Complete SasView paper
 * Continue work to expand the size and diversity of the contributor commmunity
 * Begin adding other algorithms to the generic scattering calculator such as SPONGE, McSim, Golden Vector approach etc.
@@ -103,12 +106,12 @@ Task Summary (Subject to the availability of sufficient resources):
 * Refactor the way plotting is tied to data and fitting
 * Refactor reporting and exporting of perspective data 
 * Refactoring of project/analysis Saving and Loading
-* Begin improving magnetic SANS usability/utility
-* Upgrade model marketplace
-* Add support for handling multiple scattering
+* Begin work improving magnetic SANS workflows
+* Begin adding support for handling multiple scattering calculation
 * Reimplement the orientation viewer
-* Begin work on simplifying dependencies/requirements
-* Begin work on tutorials (written and video) for scripting
+* Begin work on including the beta approximation calculation into generic scattering calculator
+* Begin work on external database integration for final results deposition
+* Complete work on simplifying dependencies/requirements
 
 **Late 2023 - Mid 2024  - Release 5.2**
 
@@ -119,7 +122,7 @@ Task Summary (Subject to the availability of sufficient resources):
 * Finish model fitting refactoring work to allow reading in an array representing either P(Q) or S(Q) for P*/S fits, fitting oriented models to 1D cuts, etc.
 * Finish work to integrate McSAS and FFSAS
 * Finish work on inclusion of PRISM[^9] functionality
-* Finish work on separating out a generic dataloader package
+* Finish work on separating out a generic dataloader package (including multiple data type support e.g. multiple detectors)
 * Begin work on separating out sascalc package
 * Begin work to refactor/improve P(R) inversion by adding full automation of parameter choices, 2D as well as 1D P(R), and/or other algorithms
 * Begin work on architecture manual
@@ -131,9 +134,10 @@ Task Summary (Subject to the availability of sufficient resources):
 * Begin use case and design on Web interface (with possible smartphone app feature); _initial version can have minimal features but would be useful for demos?_
 * Expand parallel processing support for multi-GPU, multi-CPU and CPU/GPU computation
 * Continue adding other algorithms to the generic scattering calculator such as SPONGE, McSim, Golden Vector approach etc.
-* Start implementing further tools/algorithms to aid multimodal fitting as appropriate
+* Start implementing further tools/algorithms (e.g. different cost functions) to aid multimodal fitting as appropriate
 * Complete implementation of first advanced resolution calculations subject to sufficient community agreement
 * Begin work on generic O-Z solver
+* Finish multiple scattering calculator implementation
 * Develop documentation maintenance and development strategy
 * Add the usual bug fixes and other minor improvements as time and interest permit
 * Extend available integration options such as adaptive, MC integration 
@@ -141,7 +145,8 @@ Task Summary (Subject to the availability of sufficient resources):
 * Finish work on simplifying dependencies/requirements
 * Begin work on full history stack (Redo/Undo functionality)
 * Begin work on tutorials (written and video) for writing models
-* Begin work on external database integration for final results deposition
+* Finish work on including beta approximation calculation into generic scattering calculator
+
 
 **Late 2024 - Mid 2025 - Release 5.3 / Release 6.0 alpha/beta**
 
@@ -149,7 +154,7 @@ Subject to the availability of sufficient resources, release 5.3 will focus on w
 
 Task Summary (Subject to the availability of sufficient resources):
 
-* Complete work on separating out sascalc package
+* Complete work on separating out sascalc package (including deployment on pypi)
 * Enable computational code to run on clusters and refactor GUI to add an intelligent launcher/scheduler that makes the use of a cluster back end transparent to the user
 * Begin work on implementing headless operation/realtime analysis workflows
 * Finish work to refactor/improve P(R) inversion by adding full automation of parameter choices, 2D as well as 1D P(R), and/or other algorithms
@@ -165,7 +170,7 @@ Task Summary (Subject to the availability of sufficient resources):
 * Add the usual bug fixes and other minor improvements as time and interest permit
 * Add proper Qz support to SasView analysis
 * Finish work on full history stack (Redo/Undo functionality)
-* Finish work on external database integration for final results deposition
+* Finish implementation on tools/algorithms for multimodal fitting
 
 **Late 2025 - Mid 2026 - Release 6.0**
 
@@ -183,6 +188,7 @@ Task Summary (Subject to the availability of sufficient resources):
 * Expand use of wizards and intelligent user guidance
 * Add new workflow interfaces as appropriate
 * Documentation maintenance and development
+* Finish work on external database integration
 * Add the usual bug fixes and other minor improvements as time and interest permit
 
 **Late 2026 - Mid 2027 - Release 6.x**
