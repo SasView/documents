@@ -88,7 +88,8 @@ Task Summary (Subject to the availability of sufficient resources):
 * Finish overhaul of the Corfunc module
 * Begin model fitting refactoring work to allow reading in an array representing either P(Q) or S(Q) for P*/S fits, fitting oriented models to 1D cuts, etc.
 * Finish work on (some rudimentary) tools for SAXS/SANS co-refinement 
-* Finish initial simultaneous/constrained workflow upgrades 
+* Finish initial simultaneous/constrained workflow upgrades
+* Finish refactoring of slicers
 * Begin work on advanced model fitting tutorial
 * Begin work on writing custom models tutorial
 * Create first in series of video tutorials
@@ -98,7 +99,7 @@ Task Summary (Subject to the availability of sufficient resources):
 * Continue work on separating out a generic dataloader package
 * Complete SasView paper
 * Continue work to expand the size and diversity of the contributor commmunity
-* Begin adding other algorithms to the generic scattering calculator such as FFT-based, SPONGE, McSim, Golden Vector approach etc.
+* Begin adding other algorithms to the generic scattering calculator such as FFT-based, SPONGE, McSim, Golden Vector approach etc., both isotropic and oriented systems
 * Begin work on including the beta approximation calculation into generic scattering calculator
 * Add tabbed and batch functionality to P(R) inversion to match fitting perspective functionality
 * Continue discussions on how to address mutlimodal fitting
@@ -186,7 +187,7 @@ Task Summary (Subject to the availability of sufficient resources):
 * Continue work to expand the size and diversity of the contributor commmunity
 * Create at least one more video tutorials
 * Expand use of wizards and intelligent user guidance
-* Add new workflow interfaces as appropriate
+* Add new workflow interfaces as appropriate (e.g. contrast match point, nuclear/magnetic separation, etc)
 * Documentation maintenance and development
 * Finish work on external database integration
 * Add the usual bug fixes and other minor improvements as time and interest permit
@@ -201,7 +202,7 @@ Subject to the availability of sufficient resources, release 6.x will try place 
 * Continue work to expand the size and diversity of the contributor commmunity
 * Create at least one more video tutorials
 * Expanded functionality of web app
-* Add new workflow interfaces as appropriate
+* Add new workflow interfaces as appropriate (e.g. contrast match point, nuclear/magnetic separation, etc)
 * Documentation maintenance and development
 * Add the usual bug fixes and other minor improvements as time and interest permit
 
