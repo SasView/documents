@@ -86,7 +86,6 @@ The primary goal, and therefore focus of work, for release 5.1 is to achieve ful
 Task Summary (Subject to the availability of sufficient resources):
 
 * Finish overhaul of the Corfunc module
-* Begin model fitting refactoring work to allow reading in an array representing either P(Q) or S(Q) for P*/S fits, fitting oriented models to 1D cuts, etc.
 * Finish work on (some rudimentary) tools for SAXS/SANS co-refinement 
 * Finish initial simultaneous/constrained workflow upgrades
 * Finish refactoring of slicers
@@ -94,22 +93,21 @@ Task Summary (Subject to the availability of sufficient resources):
 * Begin work on writing custom models tutorial
 * Create first in series of video tutorials
 * Begin work on tutorials (written and video) for scripting
-* Begin work to integrate McSAS and FFSAS
-* Begin work on inclusion of PRISM[^9] functionality
-* Continue work on separating out a generic dataloader package
+* Complete work on separating out a generic dataloader package (including multiple data type support e.g. multiple detectors)
 * Complete SasView paper
 * Continue work to expand the size and diversity of the contributor commmunity
 * Begin adding other algorithms to the generic scattering calculator such as FFT-based, SPONGE, McSim, Golden Vector approach etc., both isotropic and oriented systems
 * Begin work on including the beta approximation calculation into generic scattering calculator
 * Add tabbed and batch functionality to P(R) inversion to match fitting perspective functionality
+* Reimplement the orientation viewer
 * Continue discussions on how to address mutlimodal fitting
 * Continue work on developing more advanced resolution calculations in co-operation with NXcanSAS group (e.g. generic resolution functions etc)
 * Refactor the way plotting is tied to data and fitting
 * Refactor reporting and exporting of perspective data 
 * Refactoring of project/analysis Saving and Loading
+* Begin work on separating out sascalc package
 * Begin work improving magnetic SANS workflows
 * Begin adding support for handling multiple scattering calculation
-* Reimplement the orientation viewer
 * Begin work on external databases integration for final results deposition
 * Complete work on simplifying dependencies/requirements
 * Add the usual bug fixes and other minor improvements as time and interest permit
@@ -120,32 +118,29 @@ Subject to the availability of sufficient resources, release 5.2 will focus on a
 
 Task Summary (Subject to the availability of sufficient resources):
 
-* Finish model fitting refactoring work to allow reading in an array representing either P(Q) or S(Q) for P*/S fits, fitting oriented models to 1D cuts, etc.
+* Begin model fitting refactoring work to allow reading in an array representing either P(Q) or S(Q) for P*/S fits, fitting oriented models to 1D cuts, etc.
+* Complete work on separating out sascalc package (including deployment on pypi)
 * Finish work to integrate McSAS and FFSAS
-* Finish work on inclusion of PRISM[^9] functionality
-* Finish work on separating out a generic dataloader package (including multiple data type support e.g. multiple detectors)
-* Begin work on separating out sascalc package
 * Begin work to refactor/improve P(R) inversion by adding full automation of parameter choices, 2D as well as 1D P(R), and/or other algorithms
 * Begin work on architecture manual
 * Finish work on advanced model fitting tutorial
 * Finish work on writing custom models tutorial
+* Begin work on inclusion of PRISM[^9] functionality
+* Begin work to integrate McSAS and FFSAS
 * Begin work on writing scripting tutorial
 * Create at least one more tutorial as appropriate
 * Continue work to expand the size and diversity of the contributor commmunity
 * Create more video tutorials.
-* Begin use case and design on Web interface (with possible smartphone app feature); _initial version can have minimal features but would be useful for demos?_
-* Expand parallel processing support for multi-GPU, multi-CPU and CPU/GPU computation
+* Begin use case and design on Web interface (with possible smartphone app feature); initial version can have minimal features but would be useful for demos?
 * Continue adding other algorithms to the generic scattering calculator such as FFT-based, SPONGE, McSim, Golden Vector approach etc.
 * Start implementing further tools/algorithms (e.g. different cost functions) to aid multimodal fitting as appropriate
-* Complete implementation of first advanced resolution calculations subject to sufficient community agreement
-* Begin work on generic O-Z solver
+* Continue work on developing more advanced resolution calculations in co-operation with NXcanSAS group (e.g. generic resolution functions etc)
 * Finish multiple scattering calculator implementation
 * Develop documentation maintenance and development strategy
 * Add the usual bug fixes and other minor improvements as time and interest permit
 * Extend available integration options such as adaptive, MC integration 
-* P*S computation enhancements (adding locally monodisperse approx.; fix volume fraction issue, etc.)
+* P * S computation enhancements (adding locally monodisperse approx.; fix volume fraction issue, etc.)
 * Finish work on simplifying dependencies/requirements
-* Begin work on full history stack (Redo/Undo functionality)
 * Finish work on incorporating beta approximation calculation into generic scattering calculator
 
 
@@ -155,22 +150,25 @@ Subject to the availability of sufficient resources, release 5.3 will focus on w
 
 Task Summary (Subject to the availability of sufficient resources):
 
-* Complete work on separating out sascalc package (including deployment on pypi)
+* Finish model fitting refactoring work to allow reading in an array representing either P(Q) or S(Q) for P*/S fits, fitting oriented models to 1D cuts, etc.
 * Enable computational code to run on clusters and refactor GUI to add an intelligent launcher/scheduler that makes the use of a cluster back end transparent to the user
 * Begin work on implementing headless operation/realtime analysis workflows
 * Finish work to refactor/improve P(R) inversion by adding full automation of parameter choices, 2D as well as 1D P(R), and/or other algorithms
 * Finish work on architecture manual
+* Finish work on inclusion of PRISM[^9] functionality
+* Expand parallel processing support for multi-GPU, multi-CPU and CPU/GPU computation
 * Create at least one more tutorial as appropriate
 * Continue work to expand the size and diversity of the contributor commmunity
 * Create at least one more video tutorials
 * Continue implementing further tools/algorithms to aid mutlimodal fitting as appropriate
 * Start including intelligent limits/help (possibly include switch between enforcement and warning only) and explore the use of wizards and AI
 * Continue work on web UI and/or smartphone app
-* Finish work on O-Z solver
+* Complete implementation of first advanced resolution calculations subject to sufficient community agreement
+* Begin work on generic O-Z solver
 * Documentation maintenance and development
 * Add proper Qz support to SasView analysis
-* Finish work on full history stack (Redo/Undo functionality)
 * Finish implementation on tools/algorithms for multimodal fitting
+* Begin work on full history stack (Redo/Undo functionality)
 * Add the usual bug fixes and other minor improvements as time and interest permit
 
 **Late 2025 - Mid 2026 - Release 6.0**
@@ -182,6 +180,7 @@ Task Summary (Subject to the availability of sufficient resources):
 * Deploy computational code on clusters
 * Complete headless operation and realtime analysis workflows
 * Deploy Web application
+* Finish work on O-Z solver
 * Continue work on smartphone app
 * Create at least one more tutorial as appropriate
 * Continue work to expand the size and diversity of the contributor commmunity
@@ -189,6 +188,7 @@ Task Summary (Subject to the availability of sufficient resources):
 * Expand use of wizards and intelligent user guidance
 * Add new workflow interfaces as appropriate (e.g. contrast match point, nuclear/magnetic separation, etc)
 * Documentation maintenance and development
+* Finish work on full history stack (Redo/Undo functionality)
 * Finish work on external database integration
 * Add the usual bug fixes and other minor improvements as time and interest permit
 
