@@ -100,6 +100,15 @@ Task Summary (Subject to the availability of sufficient resources):
 * Continue discussions on how to address mutlimodal fitting
 * Continue work on developing more advanced resolution calculations in co-operation with NXcanSAS group (e.g. generic resolution functions etc)
 * Add the usual bug fixes and other minor improvements as time and interest permit
+* Refactor the way plotting is tied to data and fitting
+* Refactor reporting and exporting of perspective data 
+* Refactoring of project/analysis Saving and Loading
+* Begin improving magnetic SANS usability/utility
+* Upgrade model marketplace
+* Add support for handling multiple scattering
+* Reimplement the orientation viewer
+* Begin work on simplifying dependencies/requirements
+* Begin work on tutorials (written and video) for scripting
 
 **Late 2023 - Mid 2024  - Release 5.2**
 
@@ -127,6 +136,12 @@ Task Summary (Subject to the availability of sufficient resources):
 * Begin work on generic O-Z solver
 * Develop documentation maintenance and development strategy
 * Add the usual bug fixes and other minor improvements as time and interest permit
+* Extend available integration options such as adaptive, MC integration 
+* P*S computation enhancements (adding locally monodisperse approx.; fix volume fraction issue, etc.)
+* Finish work on simplifying dependencies/requirements
+* Begin work on full history stack (Redo/Undo functionality)
+* Begin work on tutorials (written and video) for writing models
+* Begin work on external database integration for final results deposition
 
 **Late 2024 - Mid 2025 - Release 5.3 / Release 6.0 alpha/beta**
 
@@ -148,6 +163,9 @@ Task Summary (Subject to the availability of sufficient resources):
 * Finish work on O-Z solver
 * Documentation maintenance and development
 * Add the usual bug fixes and other minor improvements as time and interest permit
+* Add proper Qz support to SasView analysis
+* Finish work on full history stack (Redo/Undo functionality)
+* Finish work on external database integration for final results deposition
 
 **Late 2025 - Mid 2026 - Release 6.0**
 
