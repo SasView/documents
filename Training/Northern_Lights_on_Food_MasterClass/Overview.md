@@ -1,8 +1,8 @@
 
 
-Beyond SasView GUI (Online Training: Dec 16th 2021)
+Northern Lights on Food IV Masterclass on Food 
 ===================================================
-## Agenda
+## Content
 - [Introduction to SasView and Fitting](SasView_NLoF.pptx)
 - [Tutorials](https://www.sasview.org/documentation/)
 - [Scripting Tutorial](SasModelsSphereFit.ipynb)
