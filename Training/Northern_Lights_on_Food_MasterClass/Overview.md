@@ -4,7 +4,7 @@ Northern Lights on Food IV Masterclass on Food
 ===================================================
 ## Content
 - [Introduction to SasView and Fitting](SasView_NLoF.pptx) (presentation)
-- [Tutorials](https://www.sasview.org/documentation/) (hands-on)
+- [Tutorials](https://www.sasview.org/documentation/) (hands-on) NOTE: In sasview 5.0.6 "test" folder is called "example data"
 - [Scripting Tutorial](SasModelsSphereFit.ipynb) (hands-on)
 
 ## Extras:
