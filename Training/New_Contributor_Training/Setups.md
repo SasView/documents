@@ -17,8 +17,6 @@ SYSTEM SETUPS
   - [https://stackedit.io/app#](https://stackedit.io/app#) - choose gfm flavor for strict (or default to include latex?)
   - [https://jbt.github.io/markdown-editor/](https://jbt.github.io/markdown-editor/) for pure gfm
 - reStructured text.
-  - Sphinx style (recommended - but may be unavailable):
-    - [https://livesphinx.herokuapp.com/](https://livesphinx.herokuapp.com/) may not be 100% uptod date with latest Sphinx but good start
   - Gneric (pretty good but no latex support)
     - https://www.tutorialspoint.com/online_restructure_editor.php
 - Latex editor - recommended:
