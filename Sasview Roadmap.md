@@ -109,6 +109,8 @@ Task Summary (Subject to the availability of sufficient resources):
 * Begin work improving magnetic SANS workflows
 * Begin adding support for handling multiple scattering calculation
 * Begin work on external databases integration for final results deposition
+* Reach out to BNL about maintaining conda forge as the official Linux distribution for facilities.
+* Create a user formum (like reddit or stackoverflow for community discussion)
 * Complete work on simplifying dependencies/requirements
 * Add the usual bug fixes and other minor improvements as time and interest permit
 
@@ -130,6 +132,7 @@ Task Summary (Subject to the availability of sufficient resources):
 * Begin work on writing scripting tutorial
 * Create at least one more tutorial as appropriate
 * Continue work to expand the size and diversity of the contributor commmunity
+* Develop training workshop strategy
 * Create more video tutorials.
 * Begin use case and design on Web interface (with possible smartphone app feature); initial version can have minimal features but would be useful for demos?
 * Continue adding other algorithms to the generic scattering calculator such as FFT-based, SPONGE, McSim, Golden Vector approach etc.
@@ -150,7 +153,7 @@ Subject to the availability of sufficient resources, release 5.3 will focus on w
 
 Task Summary (Subject to the availability of sufficient resources):
 
-* Finish model fitting refactoring work to allow reading in an array representing either P(Q) or S(Q) for P*/S fits, fitting oriented models to 1D cuts, etc.
+* Finish model fitting refactoring work to allow reading in an array representing either P(Q) or S(Q) for P*S fits, fitting oriented models to 1D cuts, etc.
 * Enable computational code to run on clusters and refactor GUI to add an intelligent launcher/scheduler that makes the use of a cluster back end transparent to the user
 * Begin work on implementing headless operation/realtime analysis workflows
 * Finish work to refactor/improve P(R) inversion by adding full automation of parameter choices, 2D as well as 1D P(R), and/or other algorithms
@@ -159,6 +162,7 @@ Task Summary (Subject to the availability of sufficient resources):
 * Expand parallel processing support for multi-GPU, multi-CPU and CPU/GPU computation
 * Create at least one more tutorial as appropriate
 * Continue work to expand the size and diversity of the contributor commmunity
+* Continue developing training workshop strategy and begin implementation
 * Create at least one more video tutorials
 * Continue implementing further tools/algorithms to aid mutlimodal fitting as appropriate
 * Start including intelligent limits/help (possibly include switch between enforcement and warning only) and explore the use of wizards and AI
@@ -196,6 +200,7 @@ Task Summary (Subject to the availability of sufficient resources):
 
 Subject to the availability of sufficient resources, release 6.x will try place an emphasis on addressing requests for smaller feature enhancements and improvements to the interface and workflow.  It will also continue to expand on intelligent guidance and include more functionality on web app and see the deployment of a smartphone app. SAXS specific workflows will be included. Work on a smartphone app interface to the webservice will continue but likely will not be ready for this release. Meanwhile, tutorial and community development efforts will continue and documentation tasks as envisoned in the documentation strategy exercices will be worked on.
 
+* Begin UI usablity review and testing. Consider Full external review such as from the Software Sustainability Institute or NSF equivalent institute etc. This should also include cyber security review. End product should include design guidlines for the project.
 * Continue to expand use of wizards and intelligent user guidance
 * Continue work on smartphone app
 * Create at least one more tutorial as appropriate
@@ -211,4 +216,4 @@ Subject to the availability of sufficient resources, release 6.x will try place 
 * 2015-11-24 : First release
 * 2016-10-11 : Updated after Code Camp V discussions
 * 2018-09-07 : Updated after Code Camp VI & VII discussions
-* 2022-02-18 : Updated after magnetic SANS discussions
+* 2024-02-18 : Updated after Code Camp X discussion (November 2022)
