@@ -6,9 +6,9 @@ Over the past decade several trends have contributed to exacerbate the analysis 
 
 To enable the production and maintenance of software that meets users expectations, a greater level of resources needs to be applied to the problem. This has been recognised in the neutron scattering community through projects such as DANSE [^2], Mantid [^3], CCPSAS[^4] and projects within the European Union Horizon 2020 programme such as SINE2020[^5]. While each facility or scientist may not be able to commit the necessary resources, pooling of expertise between facilities and with the user community into a single project can amplify the effort and provide gains in quality, functionality, longevity and supportability with obvious benefits to both the facilities and the users.
 
-The aim of the SasView project is to provide open source, *collaboratively developed software for the analysis of small angle scattering data*
+The aim of the SasView project is to provide open source, *community and collaboratively developed software for the analysis of small angle scattering data*
 
-The collaborative development model is designed to encourage and enable contribution from a range of experts in small angle scattering, computer science and software development. Users of the software are encouraged to participate through bug reports, submitting code and by integrating their own scattering models.
+The community collaborative development model is designed to encourage and enable contribution from a range of experts in small angle scattering, computer science and software development. Users of the software are encouraged to participate through bug reports, submitting code and by integrating their own scattering models as well as by joining the team which does not require any specific commitment. See the SasView website at <https://www.sasview.org/contribute/> about how to get involved with the SasView community.
 
 This is a regularly updated document, reviewed at each Code Camp. Document history is maintained and previous iterations can be found in the SasView GitHub repository[^6]
 
@@ -32,194 +32,194 @@ This is a regularly updated document, reviewed at each Code Camp. Document histo
 
 ## Development Model
 
-The SasView project is co-ordinated by a small management team who are also members of the broader development team. The development team currently consists of scientists and software engineers from scattering facilities around the world. Progress is monitored and project direction discussed at bi-weekly video conferences. The work is divided into various work packages that bundle together related tasks and issues. The project aims for a major release each year, with minor bug fix releases as required in between.
+The SasView project is co-ordinated by a small management team who are also members of the broader development team. The active development team currently consists mostly of scientists and software engineers from scattering facilities around the world. Progress is monitored and project direction discussed at fortnightly video conferences. The project aims for a major release each year, with minor bug fix releases as required in between.
 
 The source code for SasView is hosted on GitHub, allowing anyone to fork the code base, add functionality or fix bugs, and easily request that the code be merged into the project. The use of unit tests and code quality metrics is employed to help manage the contribution of code from a varied and dispersed developer base.
 
-As of 2015, few if any of the developers have SasView as a major component of their job assignments. Given the nature of software development this currently means most development occurs during annual code camps.  While this has proven to be a highly successful approach, it limits the rate of progress.  The Roadmap presented below is intended to give guidance to the development team and to our stakeholders as to the direction we aim to take over the next 5 years. It is an optimistic one predicated on more resources becoming available, either through new developers joining the project or work on SasView becoming a greater part of the day-to-day assignment for the current developers. It also should be used as a source of ideas for projects that could be undertaken with short-term resources or to meet specific requirements of stakeholders if they have the necessary resources available.
+As of 2011, few if any of the developers have SasView as a major component of their job assignments. Given the nature of software development this currently means most development occurs during annual code camps.  While this has proven to be a highly successful approach, it limits the rate of progress.  The Roadmap presented below is intended to give guidance to the development team and to our stakeholders as to the direction we aim to take over the next 5 years. It is an optimistic one predicated on more resources becoming available, either through new developers joining the project or work on SasView becoming a greater part of the day-to-day assignment for the current developers. It also should be used as a source of ideas for projects that could be undertaken with short-term resources or to meet specific requirements of stakeholders if they have the necessary resources available.
 
 ## Roadmap
 
 Every release should include bug fixes and new models as requests come in.  These are assumed with each release and not included specifically below.  Likewise general robustness and ease of use issues will be addressed in each release cycle.
 
-**Late 2016 - Early 2017 (from code camp V - SNS) - Towards Release 4.1**
+**Late 2018 to late 2021 - SasView 5**
 
-The main aim for release 4.1 was to address the growing list of requests for smaller feature enhancements and improvements to the interface and workflow rather than any major structural changes.  However, due to the availability of SINE2020 resources, code camp work minimised major GUI enhancements in favor of making progress on the new, Qt based, GUI interface which will be the foundation of the 5.0 release.  Cleanup of projects left over from the 4.0 release such as finishing the model documentation standardization and review were also a focus of this code camp. While a complete overhaul of saving state is being built into the new GUI project, the ability to save constrained fit pages was targeted for incorporation in this release.  Fitting of SESANS data was integrated into the GUI. Finally, with funding for a summer student at ISIS the old corfunc functionality from CCP13 was integrated as a new perspective.
+Due to an oversight the last update to the Roadmap failed to record a number of SasView releases which we correct here:
 
-Task Summary:
+* Oct 2018: <https://github.com/SasView/sasview/releases/tag/v4.2.0>  
+* Feb 2019: <https://github.com/SasView/sasview/releases/tag/v4.2.1>
+* May 2019: <https://github.com/SasView/sasview/releases/tag/v4.2.2>
+* May 2019: <https://github.com/SasView/sasview/releases/tag/v5.0.0>
+* Feb 2020: <https://github.com/SasView/sasview/releases/tag/v5.0.1>
+* Apr 2020: <https://github.com/SasView/sasview/releases/tag/v5.0.2>
+* Jul 2020: <https://github.com/SasView/sasview/releases/tag/v5.0.3>
+* Apr 2021: <https://github.com/SasView/sasview/releases/tag/v5.0.4>
 
-* Selection of high priority bug tickets were addressed
-* Added a new corfunc perspective
-* Added file converter to support multifile data
-* Integrated SESANS into the SasView GUI
-* Work progressed on Save Project when constrained fits are used 
-* Continued work on GUI refactoring (and the clean separation of UI from computational code.
-* Worked on increasing model coverage looking at non-overlap with SASfit models.
-* Worked on adding batch functionality to operations on ROI such as box sum and slices. 
-* Continued model documentation review and formatting
-* Added missing documentation and documentation of new functionality
-* Worked on improving infrastructure (build systems, 64 bit/Anaconda on all platforms of build machines, trac, licensing, etc)
+Most notable here was the move from Python2/wxPython in SasView version 4.x to Python3/pyQt in SasView version 5.x.
 
-SasView 4.1 was released in March 2017 incorporating the key pieces of work done at the previous code camp and cleaned up/bug fixed in the interim period. 
+**Late 2021 to mid 2022 - Release 5.0.5**
 
-  * <https://github.com/SasView/sasview/releases/tag/v4.1.0>  
-
-**Early-Mid  2017 (from code camp VI - Grenoble) - Towards Release 4.2**
-
-Subject to the availability of sufficient resources, release 4.2 will again focus on feature enhancements and bug fixes while continuing to work on the GUI refactoring in preparation for a release 5.0. As part of that effort plotting requirements and design work should begin. Met with SASfit team at the code camp to discuss integration of SASFitr models and functionality; improved code optimization in particular adding support for multiple GPUs; began work to streamline the API to make scripting and pipelining more straightforward.  Also discussed  the need to allow users to chose the integration method as well as discussed building the beta approximation into sasmodels. On the documentation front, besides the continual updating, work began on a tutorial series. Finally, an effort to reach to full unit test coverage began as will as verifying code usage and weeding out redundant code.
+Due to the Covid pandemic the Code Camp scheduled for March 2020 in Caltech was cancelled and another was not scheduled for another 2+ years.  With the developer community isolated, an attempt was made to pivot to short virtual Hackathons with some success, but  progress was clearly impacted. Nonetheless, release 5.0.5 provided some new features and resolved a number of issues. In particular, the generic scattering calculator got its first much needed overhaul, this one focused on the needs of the magnetic scattering community. Work will now begin on refactoring the simultaneous/constrained fitting workflow interface.
 
 Task Summary:
 
-* Continued work on new GUI and code separation
-* Finalized approach for handling orientational distributions.
-* Enhancing of plot functionality - Collected requirements and began design.
-    * Identifed requirements and improvements desired from current design such as tighten space, better fonts, provide both graphical and text entry of controls, put residuals on same panel, provide option to turn auto- plotting of residuals on or off etc)
-    * Discussed options for technology to use matplotlib, qtplot, pyqtgraph - currently use matplotlib which is most used but slow at times.  ESRF presented their Silex framework.
-* Worked on ensuring all computational code has proper unit tests and that they are all being run
-* Worked on verifying code redundancy and weed out old/unused/obsolete code
-* Began work on tutorial series
-* Updated documentation
-* Worked on SASfit model integration including discussion with SASFit team
-* SasView 4.1.1 and SasView 4.1.2 were released in Mid 2017    
+* A sasmodels interface for custom re-parameterization of models is provided 
+* Continued work on refactoring constrained/simultaneous fits
+* The generic scattering calculator was significantly overhauled particularly for use with magnetic materials
+* Started developing ideas for community interactions and hosted several training workshops (some virtual)
+* Work on incorporating polyhedral form factors continued
+* Work on graphical represtation of models continued
+* Work on defining and incorporating generic resolution functions was started
+* Work to update tutorials to support 5.x continued
+* Work on the SasView paper continued
+* Model marketplace was upgraded
+* Begin work on simplifying dependencies/requirements
+* As usual, a large number of bug fixes and other minor improvements were included
 
-    * <https://github.com/SasView/sasview/releases/tag/v4.1.1>   
-    * <https://github.com/SasView/sasview/releases/tag/v4.1.2>  
+SasView 5.0.5 was released on June 3, 2022.
+* <https://github.com/SasView/sasview/releases/tag/v5.0.5>
 
-* A hands-on tutorial was developed for use at a Nordic Summer School. 
+**Late 2022 - Mid 2023 - Release 5.0.6**
 
-**Late 2017 - Mid 2018 (from code camp VII - ESS-DMSC) - Towards releases 4.2 and 5.0**
-
-Code Camp VII focussed on exposing developers to the new GUI framework and working on a 4.2 release candidate. Managing parallel development of the 4.x and 5.x code bases began. Release 5.0 will provide a clean API so that future GUI efforts such as web interfaces etc will be simpler to introduce while significantly improving the user experience by providing better integration between the various parts of the GUI that have evolved and grown organically over time in response to requests. This will hopefully also address the mac vs PC usability, save state, reporting, and preferences setting which have been raised as high priority useability issues. Documentation review and creation of new documentation continued.  
-
-Task Summary:
-
-* A significant number of bug and small enhancement tickets were addressed
-* Continued refactoring new Qt based GUI toward 5.0 release and beginning to bring non SINE2020 coders to bear on these tasks
-* Work on J. Appl. Cryst. Paper begun
-* Orientational distribution work was completed
-* Released sasmodels 0.97 and loaded to PyPI
-* Development of beta approximation started 
-* SasView 4.2 beta released
-
-**Late 2018 to mid 2019 (from code camp VIII - ESS) - Release 4.2, Release 5.0**
-The focus in this period will be on development and release of version 5.0 of SasView. In parallel version 4.2 and possibly 4.3 will be released providing a maintained, stable, release for current users of SasView. This managed transition from the 4.x series to the 5.x series will allow for extensive user testing of the 5.0 version prior to release. We expect to continue maintenance of the final 4.x release beyond the release of 5.0, with an eventual end-of-life for 4.x occurring with the 5.2 release.
-Full integration of the beta approximation work into 5.0 will be completed, with some limited beta approximation functionality being made available in 4.x. 
-The first SasView community meeting will be held at the SAS 2018 meeting in October 2018 providing SasView users and contributors with an introduction to the new functionality being made available in 5.0 and training on how to get involved in contributing to the SasView project. Building on this meeting a plan for expanding community interactions will be developed.
-Release 4.2 and 5.0 will support separate plotting of the P(Q) and S(Q) components in a P*S analysis. Work will begin on integration of McSAS into SasView, primarily planning and design work.
-The SasModels Marketplace will be updated to better support user needs and fix bugs in the deployment, including bringing the backend up to recent versions.
-
-Task Summary:  
-
-- Move focus of all GUI efforts to the new Qt GUI
-- Parallel development and release tracks
-- Complete beta approximation work
-- New, more flexible interaction volumes/radii
-- Community meeting at SAS 2018
-- Complete SasView paper
-- Consolidate and extend training material - both written tutorials and hands-on training material.
-- Update model marketplace
-- Create plan for developing community interactions.
-- Fixes to custom model editor to support polydispersity
-- Incorporation of models from SASFit[^7] and Scatter[^8] (Förster - crystalline materials models primarily)
-- Project infrastructure cleanup - ticket review/cull given 5.0 release and possible move to GitHub issues.
-- Release 5.0 alpha (late 2018), 5.0 beta (early 2019), 5.0 (mid 2019) 
-- Release 4.2
-
-**Late 2019 to mid 2020 (from code camp VIII - ESS) - Release 4.3, Release 5.1**
-
-Subject to the availability of sufficient resources, release 5.1. Work will start on refactoring fitting to allow, for example custom re-parameterization of models (e.g. replace SLD with fraction of solvent in layer), using an input array for P or S in a P*S model, fitting oriented model to 1D cut etc. Work will begin on refactoring the simultaneous/constrained fitting workflow interface and on custom workflows identified as highest priority and having a well developed design. User documentation/tutorials will be reviewed, an advanced "how to fit my data" tutorial will be started, and an architecture manual begun. McSAS will be integrated into SasView, giving users an  approach to obtaining particle size distributions.
-Work on providing the generic O-Z solver tool that is present in SASFit will begin. Work on support for multi-GPU and multi-CPU computation, which may involve refactoring away from OpenCL as support for this standard is waning. Incorporation of the PRISM[^9] (polymer reference interaction site model) code into SasView.
+The primary goal, and therefore focus of work, for release 5.1 is to achieve full feature parity with the 4.x versions. While 5.x has many new features and advances there remain a number of outstanding issues tagged with the "For Feature Parity" label in Github such as the orientation viewer. Subject to the availability of sufficient resources, release 5.1 will also begin work on a number of much needed infrastructure refactoring work such as pulling out the data loader, cleaning up the slicer code base while adding features, refactoring the plotting desig, and separating out the GUI package from the calculation package; add new scattering calculators to the generic scattering calculator; and add improved functionality to the P(R) perspective.  Work will continue on an advanced data fitting with SasView tutorial. On the documentation and community development fronts, work will continue to expand and diversify the contributor community, several new tutorials, both written and video, will be started, and the SasView paper will be submitted.
 
 Task Summary (Subject to the availability of sufficient resources):
 
-* Begin model fitting refactoring work to allow custom re-parameterization of models, allow reading in an array representing either PQ or SQ for P*S fits, fitting oriented model to 1D cuts including revisiting orientation definitions etc.
-* Complete architecture manual
-* Begin work on refactoring constrained/simultaneous fits.
-* Begin work on adding custom workflows identified as highest priority 
-* Work to update tutorials to support 5.x
 * Begin work on advanced model fitting tutorial
-* Usual bug fixes and other minor improvements as time and interest permit
-*  Integration of McSAS
-*  Begin work on generic O-Z solver
-*  Inclusion of PRISM[^9] functionality
-*  Begin work to refactor/improve generic scattering calculator
-*  Improvements to custom model editors including features from compare.py
-*  Support for multi-GPU, multi-CPU and CPU/GPU computation
+* Begin work on writing custom models tutorial
+* Create first in series of video tutorials
+* Begin work on tutorials (written and video) for scripting
+* Continue work to expand the size and diversity of the contributor commmunity
+* Begin adding other algorithms to the generic scattering calculator such as FFT-based, SPONGE, McSim, Golden Vector approach etc., both isotropic and oriented systems
+* Begin work on including the beta approximation calculation into generic scattering calculator
+* Add tabbed and batch functionality to P(R) inversion to match fitting perspective functionality
+* Begin work on reimplementing the orientation viewer
+* Continue discussions on how to address mutlimodal fitting
+* Continue work on developing more advanced resolution calculations in co-operation with NXcanSAS group (e.g. generic resolution functions etc)
+* Refactor the way plotting is tied to data and fitting
+* Refactor reporting and exporting of perspective data 
+* Refactoring of project/analysis Saving and Loading
+* Begin work on separating out sascalc package
+* Begin work improving magnetic SANS workflows
+* Begin adding support for handling multiple scattering calculation
+* Begin work on external databases integration for final results deposition
+* Reach out to BNL about maintaining conda forge as the official Linux distribution for facilities.
+* Complete work on simplifying dependencies/requirements
+* Add the usual bug fixes and other minor improvements as time and interest permit
 
-**Late 2020 - Mid 2021 (from Code Camp IX)- Release 5.2**
+SasView 5.0.5 was released on June 6, 2023.
+* <https://github.com/SasView/sasview/releases/tag/v5.0.6>
 
-Subject to the availability of sufficient resources, release 5.2 will provide new fitting functionality such as custom re-parameterization of models, allow reading in an array representing either PQ or SQ for P*S, fitting oriented model to 1D cut etc. The refactored workflow interfaces for constrained/simultaneous fits and batch fitting and plotting module will be deployed in this release.  Work will continue on an advanced data fitting with SasView tutorial.  Work on new workflow/interfaces for contrast variation for example and new magnetic scattering workflows will begin.  These workflows are not expected to be in the release however. Generic O-Z solver will be available in this release.
+**Late 2023 - Mid 2024  - Release 6.0**
 
-Task Summary (Subject to the availability of sufficient resources):
-
-* Finish fitting refactoring work to allow custom re-parameterization of models, allow reading in an array representing either PQ or SQ for P*S fits, fitting oriented model to 1D cut etc.
-* Refactor simultaneous/constrained workflow interface
-* Continue development of advanced fitting tutorial
-* Start new workflow/interfaces
-* Usual bug fixes and other minor improvements as time and interest permit
-* Finish work on O-Z solver.
-* Complete work on refactor/improve generic scattering calculator.
-
-**Late 2021 - Mid 2022 (from Code Camp X)  - Release 5.3**
-
-Subject to the availability of sufficient resources, release 5.3 will again try place an emphasis on addressing requests for smaller feature enhancements and improvements to the interface and workflow.  It will also include some new workflow interfaces.  Use cases and design development will commence on a web interface (possibly including smartphone app capabilities). Advanced fitting tutorial and other unfinished documentation projects will be completed. Review all documentation and prioritize needs for next release. Work on integration of SasView into realtime analysis workflows at beamlines will begin.
-
-Task Summary (Subject to the availability of sufficient resources):
-
-* Finish advanced model fitting tutorial
-* Include more workflow/interfaces
-* Begin use case and design on Web interface (with possible smartphone app feature) * initial version can have minimal features but would be useful for demos?
-* Finish outstanding documentation projects
-* Prioritize new documentation tasks
-* Usual bug fixes and other minor improvements as time and interest permit
-* Headless operation/realtime analysis workflows started
-
-
-**Late 2022 - Mid 2023 (from code camp XI ) - Release 5.4 / Release 6.0 alpha/beta**
-
-Subject to the availability of sufficient resources, release 5.4 will start providing intelligent feedback on unreasonable choices.  Transition will start to the 6.x release series as support for ASAXS is added and other SAXS specific tools/workflows are added as needed.  Web UI work will continue but is not expected to be ready for this release.  Finally work will begin to allow computational code to run on a cluster and an intelligent launcher/scheduler design started for the GUI frontend which will make the use of the a cluster backend transparent to the user. Include documentation tasks prioritized in previous round. Integration of SasView into a realtime analysis workflow on beamlines will be completed.
+Subject to the availability of sufficient resources, release 5.2 will focus on adding major new functionality along with the usual bug fixes and minor improvements. Work should begin on new fitting functionality such as allowing for the reading in of an array representing either P(Q) or S(Q) for P*S and fitting oriented models to 1D slices, etc.; adding PRISM[^9] (polymer reference interaction site model), McSAS and FFSAS (providing users with better approaches for obtaining particle size distributions) fitting modules. New real-space to Fourier-space calculators may continue to be added to the general scattering calculator and some new tools for multimodal analysis may begin to show up in this release as well. Final separation of the GUI package from the calculation package should be completed with this release. Use cases and design development will commence on a web interface (possibly including smartphone app capabilities). Meanwhile, tutorial and community development efforts will continue while an effort will be made to develop sustainable plans for documentation maintenance and development writ large. 
 
 Task Summary (Subject to the availability of sufficient resources):
 
-* Start including intelligent limits/help (possibly include switch between enforcement and warning only) and explore the use of wizards in some cases
-* Continue work on web UI and smartphone app
-* ASAXS support added 
-* Add extra SAXS specific needs as appropriate
+* Finish overhaul of the Corfunc module
+* Finish work on (some rudimentary) tools for SAXS/SANS co-refinement 
+* Finish initial simultaneous/constrained workflow upgrades
+* Finish refactoring of slicers
+* Complete work on separating out a generic dataloader package (including multiple data type support e.g. multiple detectors)
+* Begin model fitting refactoring work to allow reading in an array representing either P(Q) or S(Q) for P*S fits, fitting oriented models to 1D cuts, etc
+* Begin work to refactor/improve P(R) inversion by adding full automation of parameter choices, 2D as well as 1D P(R), and/or other algorithms
+* Begin work on architecture manual
+* Finish work on advanced model fitting tutorial
+* Finish work on writing custom models tutorial
+* Begin work on inclusion of PRISM[^9] functionality
+* Begin work to integrate McSAS and FFSAS
+* Begin work on writing scripting tutorial
+* Create at least one more tutorial as appropriate
+* Continue work to expand the size and diversity of the contributor commmunity
+* Develop training workshop strategy
+* Create more video tutorials.
+* Begin use case and design on Web interface (with possible smartphone app feature); initial version can have minimal features but would be useful for demos?
+* Continue adding other algorithms to the generic scattering calculator such as FFT-based, SPONGE, McSim, Golden Vector approach etc.
+* Start implementing further tools/algorithms (e.g. different cost functions) to aid multimodal fitting as appropriate
+* Continue work on developing more advanced resolution calculations in co-operation with NXcanSAS group (e.g. generic resolution functions etc)
+* Finish multiple scattering calculator implementation
+* Develop documentation maintenance and development strategy
+* Add the usual bug fixes and other minor improvements as time and interest permit
+* Extend available integration options such as adaptive, MC integration 
+* P * S computation enhancements (adding locally monodisperse approx.; fix volume fraction issue, etc.)
+* Finish work on simplifying dependencies/requirements
+* Finish work on incorporating beta approximation calculation into generic scattering calculator
+* Create a user formum (like reddit or stackoverflow for community discussion)
+* Continue work on SasView paper
+* Continue work on separating out sascalc package (including deployment on pypi)
+* Continue work on developing more advanced resolution calculations in co-operation with NXcanSAS group (e.g. generic resolution functions etc)
+
+**Late 2024 - Mid 2025 - Release 6.x**
+
+Subject to the availability of sufficient resources, release 5.3 will focus on wrapping up some new features and preparing for more distributed operation. In particular, the new fitting functionality such as allowing for the reading in of an array representing either P(Q) or S(Q) for P*S, fitting oriented models to 1D slices, PRISM, etc. should be ready for this release along with some more advanced resolution calculation options, while continuing work on a web app, allowing computational code to run on a cluster with an intelligent launcher/scheduler for the GUI frontend which will make the use of the a cluster backend transparent to the user, data pipelining etc as well starting work on providing intelligent feedback.  However, while the web UI and remote job operation work will continue, is not expected to be ready for this release. Meanwhile, tutorial and community development efforts will continue and documentation tasks as envisioned in the documentation strategy exercices will be worked on. along with work on some infrastructure projects such as providing more robust parallel processing support.
+
+Task Summary (Subject to the availability of sufficient resources):
+
+* Finish model fitting refactoring work to allow reading in an array representing either P(Q) or S(Q) for P*S fits, fitting oriented models to 1D cuts, etc.
 * Enable computational code to run on clusters and refactor GUI to add an intelligent launcher/scheduler that makes the use of a cluster back end transparent to the user
-* Documentation tasks as determined during previous code camp or fortnightly meetings
-* Headless operation and realtime analysis workflows completed.
-* Usual bug fixes and other minor improvements as time and interest permit
+* Begin work on implementing headless operation/realtime analysis workflows
+* Finish work to refactor/improve P(R) inversion by adding full automation of parameter choices, 2D as well as 1D P(R), and/or other algorithms
+* Finish work on architecture manual
+* Finish work on inclusion of PRISM[^9] functionality
+* Expand parallel processing support for multi-GPU, multi-CPU and CPU/GPU computation
+* Create at least one more tutorial as appropriate
+* Continue work to expand the size and diversity of the contributor commmunity
+* Continue developing training workshop strategy and begin implementation
+* Create at least one more video tutorials
+* Continue implementing further tools/algorithms to aid mutlimodal fitting as appropriate
+* Start including intelligent limits/help (possibly include switch between enforcement and warning only) and explore the use of wizards and AI
+* Continue work on web UI and/or smartphone app
+* Complete implementation of first advanced resolution calculations subject to sufficient community agreement
+* Begin work on generic O-Z solver
+* Documentation maintenance and development
+* Add proper Qz support to SasView analysis
+* Finish implementation on tools/algorithms for multimodal fitting
+* Begin work on full history stack (Redo/Undo functionality)
+* Add the usual bug fixes and other minor improvements as time and interest permit
+* Complete work on developing more advanced resolution calculations in co-operation with NXcanSAS group (e.g. generic resolution functions etc)
+* Complete work on separating out sascalc package (including deployment on pypi)
+* Complete SasView paper
 
-**Late 2023 - Mid 2024 (after code camp XII) - Release 6.0**
 
-Subject to the availability of sufficient resources, release 6.0 will allow running compute intensive portions of SasView computation on a cluster back end with a transparent access from the user GUI.  It will also allow deployment as a webservice with a web based front end which will have limited functionality in this first instance.  ASAXS and other SAXS specific workflows will be included. Work on a smartphone app interface to the webservice will continue but lilkely will not be ready for this release. The use of wizards and intelligent user guidance will be expanded and new workflows/interfaces may be added as appropriate. Include documentation tasks prioritized in previous round.
+**Late 2025 - Mid 2026 - Release 6.x**
+
+Subject to the availability of sufficient resources, release 6.0 will allow running compute intensive portions of SasView computation on a cluster back end with a transparent access from the desktop GUI. It will also allow deployment as a webservice with a web based front end which will have limited functionality in this first instance. Integration of SasView into a realtime analysis workflow on actual beamlines should now be possible. The use of wizards and intelligent user guidance will be expanded and new workflows/interfaces may be added as appropriate. Meanwhile, tutorial and community development efforts will continue and documentation tasks as envisoned in the documentation strategy exercices will be worked on.
 
 Task Summary (Subject to the availability of sufficient resources):
 
-* UI refactoring complete
 * Deploy computational code on clusters
-* GUI includes intelligent launcher/scheduler that makes the use of a cluster back end transparent to the user
+* Complete headless operation and realtime analysis workflows
 * Deploy Web application
+* Finish work on O-Z solver
+* Continue work on smartphone app
+* Create at least one more tutorial as appropriate
+* Continue work to expand the size and diversity of the contributor commmunity
+* Create at least one more video tutorials
 * Expand use of wizards and intelligent user guidance
-* Add new workflow interfaces as appropriate
-* Continue work on smartphone UI
-* Documentation tasks as determined during previous code camp or fortnightly meetings
-* Usual bug fixes and other minor improvements as time and interest permit
+* Add new workflow interfaces as appropriate (e.g. contrast match point, nuclear/magnetic separation, etc)
+* Documentation maintenance and development
+* Finish work on full history stack (Redo/Undo functionality)
+* Finish work on external database integration
+* Add the usual bug fixes and other minor improvements as time and interest permit
 
-**Late 2024 - Mid 2025 (after code camp XIII - TBA) - Release 6.x**
+**Late 2026 - Mid 2027 - Release 6.x**
 
-Subject to the availability of sufficient resources, release 6.x will again try place an emphasis on addressing requests for smaller feature enhancements and improvements to the interface and workflow.  It will also continue to expand on intelligent guidance and include more functionality on web app and see the deployment of a smartphone app. Include documentation tasks prioritized in previous round.
+Subject to the availability of sufficient resources, release 6.x will try place an emphasis on addressing requests for smaller feature enhancements and improvements to the interface and workflow.  It will also continue to expand on intelligent guidance and include more functionality on web app and see the deployment of a smartphone app. SAXS specific workflows will be included. Work on a smartphone app interface to the webservice will continue but likely will not be ready for this release. Meanwhile, tutorial and community development efforts will continue and documentation tasks as envisoned in the documentation strategy exercices will be worked on.
 
+* Begin UI usablity review and testing. Consider Full external review such as from the Software Sustainability Institute or NSF equivalent institute etc. This should also include cyber security review. End product should include design guidlines for the project.
 * Continue to expand use of wizards and intelligent user guidance
-* Deploy smartphone app
+* Continue work on smartphone app
+* Create at least one more tutorial as appropriate
+* Continue work to expand the size and diversity of the contributor commmunity
+* Create at least one more video tutorials
 * Expanded functionality of web app
-* Documentation tasks as determined during previous code camp or fortnightly meetings
-* Usual bug fixes and other minor improvements as time and interest permit
-
-
+* Add new workflow interfaces as appropriate (e.g. contrast match point, nuclear/magnetic separation, etc)
+* Documentation maintenance and development
+* Add the usual bug fixes and other minor improvements as time and interest permit
 
 ## Revision History ##
 
-* 2015-11-24	: First release
-* 2016-10-11	: Updated after Code Camp V discussions
-* 2018-09-07     : Updated after Code Camp VI & VII discussions
+* 2015-11-24 : First release
+* 2016-10-11 : Updated after Code Camp V discussions
+* 2018-09-07 : Updated after Code Camp VI & VII discussions
+* 2024-02-18 : Updated after Code Camp X discussion (November 2022)
