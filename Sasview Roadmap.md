@@ -81,18 +81,24 @@ SasView 5.0.5 was released on June 3, 2022.
 
 **Late 2022 - Mid 2023 - Release 5.0.6**
 
-The primary goal, and therefore focus of work, for release 5.1 is to achieve full feature parity with the 4.x versions. While 5.x has many new features and advances there remain a number of outstanding issues tagged with the "For Feature Parity" label in Github such as the orientation viewer. Subject to the availability of sufficient resources, release 5.1 will also begin work on a number of much needed infrastructure refactoring work such as pulling out the data loader, cleaning up the slicer code base while adding features, refactoring the plotting desig, and separating out the GUI package from the calculation package; add new scattering calculators to the generic scattering calculator; and add improved functionality to the P(R) perspective.  Work will continue on an advanced data fitting with SasView tutorial. On the documentation and community development fronts, work will continue to expand and diversify the contributor community, several new tutorials, both written and video, will be started, and the SasView paper will be submitted.
+Release 5.0.6 is a point release which fixes a number of issues reported in earlier versions of 5.0.x. 
+Of particular note, the failure of the program to start when installing on a new system due to issues 
+finding the config file has been fixed. The speed with which the program starts up has also been improved. 
+In the course of preparing 5.0.6 release number of much needed infrastructure refactoring work such as pulling out the data loader started
+So as cleaning up the slicer code base while adding features, refactoring the plotting design, 
+and separating out the GUI package from the calculation package. 
+Also work continued on an advanced data fitting with SasView tutorial. 
+On the documentation and community development fronts, work continued to expand and diversify the contributor community. 
 
-Task Summary (Subject to the availability of sufficient resources):
+Task Summary:
 
 * Begin work on advanced model fitting tutorial
 * Begin work on writing custom models tutorial
-* Create first in series of video tutorials
 * Begin work on tutorials (written and video) for scripting
 * Continue work to expand the size and diversity of the contributor commmunity
 * Begin adding other algorithms to the generic scattering calculator such as FFT-based, SPONGE, McSim, Golden Vector approach etc., both isotropic and oriented systems
 * Begin work on including the beta approximation calculation into generic scattering calculator
-* Add tabbed and batch functionality to P(R) inversion to match fitting perspective functionality
+* Contine work on batch functionality to P(R) inversion to match fitting perspective functionality
 * Begin work on reimplementing the orientation viewer
 * Continue discussions on how to address mutlimodal fitting
 * Continue work on developing more advanced resolution calculations in co-operation with NXcanSAS group (e.g. generic resolution functions etc)
@@ -101,7 +107,6 @@ Task Summary (Subject to the availability of sufficient resources):
 * Refactoring of project/analysis Saving and Loading
 * Begin work on separating out sascalc package
 * Begin work improving magnetic SANS workflows
-* Begin adding support for handling multiple scattering calculation
 * Begin work on external databases integration for final results deposition
 * Reach out to BNL about maintaining conda forge as the official Linux distribution for facilities.
 * Complete work on simplifying dependencies/requirements
@@ -113,6 +118,9 @@ SasView 5.0.5 was released on June 6, 2023.
 **Late 2023 - Mid 2024  - Release 6.0**
 
 Subject to the availability of sufficient resources, release 6.0 will focus on adding major new functionality along with the usual bug fixes and minor improvements. Work should begin on new fitting functionality such as allowing for the reading in of an array representing either P(Q) or S(Q) for P*S and fitting oriented models to 1D slices, etc.; adding PRISM[^9] (polymer reference interaction site model), McSAS and FFSAS (providing users with better approaches for obtaining particle size distributions) fitting modules. New real-space to Fourier-space calculators may continue to be added to the general scattering calculator and some new tools for multimodal analysis may begin to show up in this release as well. Final separation of the GUI package from the calculation package should be completed with this release. Use cases and design development will commence on a web interface (possibly including smartphone app capabilities). Meanwhile, tutorial and community development efforts will continue while an effort will be made to develop sustainable plans for documentation maintenance and development writ large. 
+The primary goal, and therefore focus of work, for release 5.1 is to achieve full feature parity with the 4.x versions. 
+While 5.x has many new features and advances there remain a number of outstanding issues tagged with the "For Feature Parity" label in Github such as the orientation viewer. 
+
 
 Task Summary (Subject to the availability of sufficient resources):
 
