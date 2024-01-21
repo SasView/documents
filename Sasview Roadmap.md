@@ -117,8 +117,14 @@ SasView 5.0.5 was released on June 6, 2023.
 
 **Late 2023 - Mid 2024  - Release 6.0**
 
-Subject to the availability of sufficient resources, release 6.0 will focus on adding major new functionality along with the usual bug fixes and minor improvements. Work should begin on new fitting functionality such as allowing for the reading in of an array representing either P(Q) or S(Q) for P*S and fitting oriented models to 1D slices, etc.; adding PRISM[^9] (polymer reference interaction site model), McSAS and FFSAS (providing users with better approaches for obtaining particle size distributions) fitting modules. New real-space to Fourier-space calculators may continue to be added to the general scattering calculator and some new tools for multimodal analysis may begin to show up in this release as well. Final separation of the GUI package from the calculation package should be completed with this release. Use cases and design development will commence on a web interface (possibly including smartphone app capabilities). Meanwhile, tutorial and community development efforts will continue while an effort will be made to develop sustainable plans for documentation maintenance and development writ large. 
-The primary goal, and therefore focus of work, for release 5.1 is to achieve full feature parity with the 4.x versions. 
+Subject to the availability of sufficient resources, release 6.0 will focus on adding major new functionality along with the usual bug fixes and minor improvements. 
+Also, we will try to achieve full feature parity with the 4.x versions. 
+Work should begin on new fitting functionality such as allowing for the reading in of an array representing either P(Q) or S(Q) for P*S and fitting oriented models to 1D slices, etc.
+New real-space to Fourier-space calculators may continue to be added to the general scattering calculator and some new tools for multimodal analysis may begin to show up in this release as well. 
+Final separation of the GUI package from the calculation package should be completed with this release. 
+Use cases and design development will commence on a web interface (possibly including smartphone app capabilities). 
+Meanwhile, tutorial and community development efforts will continue while an effort will be made to develop sustainable plans for documentation maintenance and development writ large. 
+
 While 5.x has many new features and advances there remain a number of outstanding issues tagged with the "For Feature Parity" label in Github such as the orientation viewer. 
 
 
@@ -159,7 +165,15 @@ Task Summary (Subject to the availability of sufficient resources):
 
 **Late 2024 - Mid 2025 - Release 6.x**
 
-Subject to the availability of sufficient resources, release 5.3 will focus on wrapping up some new features and preparing for more distributed operation. In particular, the new fitting functionality such as allowing for the reading in of an array representing either P(Q) or S(Q) for P*S, fitting oriented models to 1D slices, PRISM, etc. should be ready for this release along with some more advanced resolution calculation options, while continuing work on a web app, allowing computational code to run on a cluster with an intelligent launcher/scheduler for the GUI frontend which will make the use of the a cluster backend transparent to the user, data pipelining etc as well starting work on providing intelligent feedback.  However, while the web UI and remote job operation work will continue, is not expected to be ready for this release. Meanwhile, tutorial and community development efforts will continue and documentation tasks as envisioned in the documentation strategy exercices will be worked on. along with work on some infrastructure projects such as providing more robust parallel processing support.
+Subject to the availability of sufficient resources, release 5.3 will focus on wrapping up some new features and preparing for more distributed operation. 
+In particular, the new fitting functionality such as allowing for the reading in of an array representing either P(Q) or S(Q) for P*S, fitting oriented models to 1D slices, etc. 
+should be ready for this release along with some more advanced resolution calculation options, while continuing work on a web app, 
+allowing computational code to run on a cluster with an intelligent launcher/scheduler for the GUI frontend which will make the use of the cluster backend transparent to the user, 
+data pipelining etc as well starting work on providing intelligent feedback.  
+Work should begin on adding PRISM[^9] (polymer reference interaction site model), McSAS and FFSAS (providing users with better approaches for obtaining particle size distributions) fitting modules. 
+However, while the web UI and remote job operation work will continue, is not expected to be ready for this release. 
+Meanwhile, tutorial and community development efforts will continue and documentation tasks as envisioned in the documentation strategy exercices will be worked on. along with work
+on some infrastructure projects such as providing more robust parallel processing support.
 
 Task Summary (Subject to the availability of sufficient resources):
 
