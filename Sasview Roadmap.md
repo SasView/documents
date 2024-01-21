@@ -121,7 +121,7 @@ Subject to the availability of sufficient resources, release 6.0 will focus on a
 Also, we will try to achieve full feature parity with the 4.x versions. 
 Work should begin on new fitting functionality such as allowing for the reading in of an array representing either P(Q) or S(Q) for P*S and fitting oriented models to 1D slices, etc.
 New real-space to Fourier-space calculators may continue to be added to the general scattering calculator and some new tools for multimodal analysis may begin to show up in this release as well. 
-Final separation of the GUI package from the calculation package should be completed with this release. 
+The final separation of the GUI package from the calculation package should be completed with this release. 
 Use cases and design development will commence on a web interface (possibly including smartphone app capabilities). 
 Meanwhile, tutorial and community development efforts will continue while an effort will be made to develop sustainable plans for documentation maintenance and development writ large. 
 
@@ -158,14 +158,14 @@ Task Summary (Subject to the availability of sufficient resources):
 
 **Late 2024 - Mid 2025 - Release 6.1**
 
-Subject to the availability of sufficient resources, release 6.1 will focus on wrapping up some new features and preparing for more distributed operation. 
+Subject to the availability of sufficient resources, release 6.1 will focus on wrapping up some new features and preparing for more distributed operations. 
 In particular, the new fitting functionality such as allowing for the reading in of an array representing either P(Q) or S(Q) for P*S, fitting oriented models to 1D slices, etc. 
 should be ready for this release along with some more advanced resolution calculation options, while continuing work on a web app, 
 allowing computational code to run on a cluster with an intelligent launcher/scheduler for the GUI frontend which will make the use of the cluster backend transparent to the user, 
-data pipelining etc as well starting work on providing intelligent feedback.  
+data pipelining etc as well as starting work on providing intelligent feedback.  
 Work should begin on adding PRISM[^9] (polymer reference interaction site model), McSAS and FFSAS (providing users with better approaches for obtaining particle size distributions) fitting modules. 
 However, while the web UI and remote job operation work will continue, is not expected to be ready for this release. 
-Meanwhile, tutorial and community development efforts will continue and documentation tasks as envisioned in the documentation strategy exercices will be worked on. 
+Meanwhile, tutorial and community development efforts will continue and documentation tasks as envisioned in the documentation strategy exercises will be worked on. 
 Along with work on some infrastructure projects such as providing more robust parallel processing support.
 
 Task Summary (Subject to the availability of sufficient resources):
@@ -180,7 +180,7 @@ Task Summary (Subject to the availability of sufficient resources):
 * Begin work on full history stack (Redo/Undo functionality)
 * Expand parallel processing support for multi-GPU, multi-CPU and CPU/GPU computation
 * Create at least one more tutorial as appropriate
-* Continue work to expand the size and diversity of the contributor commmunity
+* Continue work to expand the size and diversity of the contributor community
 * Continue developing training workshop strategy and begin implementation
 * Create at least one more video tutorials
 * Continue implementing further tools/algorithms to aid mutlimodal fitting as appropriate
@@ -201,12 +201,12 @@ Task Summary (Subject to the availability of sufficient resources):
 **Late 2025 - Mid 2026 - Release 6.2**
 
 Subject to the availability of sufficient resources, release 6.2 will allow running compute intensive portions 
-of SasView computation on a cluster back end with a transparent access from the desktop GUI. 
+of SasView computation on a cluster back end with transparent access from the desktop GUI. 
 It will also allow deployment as a webservice with a web based front end which will have limited functionality in this first instance. 
 Integration of SasView into a realtime analysis workflow on actual beamlines should now be possible. 
 The use of wizards and intelligent user guidance will be expanded and new workflows/interfaces may be added as appropriate. 
-Meanwhile, tutorial and community development efforts will continue and documentation tasks as envisoned 
-in the documentation strategy exercices will be worked on.
+Meanwhile, tutorial and community development efforts will continue and documentation tasks as envisioned 
+in the documentation strategy exercises will be worked on.
 
 Task Summary (Subject to the availability of sufficient resources):
 
@@ -232,13 +232,13 @@ for smaller feature enhancements and improvements to the interface and workflow.
 It will also continue to expand on intelligent guidance and include more functionality on web app and see the deployment of a smartphone app. 
 SAXS specific workflows will be included. Work on a smartphone app interface to the webservice will continue but likely 
 will not be ready for this release. Meanwhile, tutorial and community development efforts will continue and documentation 
-tasks as envisoned in the documentation strategy exercices will be worked on.
+tasks as envisioned in the documentation strategy exercises will be worked on.
 
-* Begin UI usablity review and testing. Consider Full external review such as from the Software Sustainability Institute or NSF equivalent institute etc. This should also include cyber security review. End product should include design guidelines for the project.
+* Begin UI usability review and testing. Consider Full external review such as from the Software Sustainability Institute or NSF equivalent institute etc. This should also include cyber security review. End product should include design guidelines for the project.
 * Continue to expand use of wizards and intelligent user guidance
 * Continue work on smartphone app
 * Create at least one more tutorial as appropriate
-* Continue work to expand the size and diversity of the contributor commmunity
+* Continue work to expand the size and diversity of the contributor community
 * Create at least one more video tutorials
 * Expanded functionality of web app
 * Add new workflow interfaces as appropriate (e.g. contrast match point, nuclear/magnetic separation, etc)
