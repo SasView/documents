@@ -1,5 +1,4 @@
-##OUTLINE OF INTRO TALK
-
+## OUTLINE OF INTRO TALK
 
 * Dispel the myth of SasView
   * What it is NOT
